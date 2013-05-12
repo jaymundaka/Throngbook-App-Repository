@@ -1,0 +1,148 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+*/
+ul.megamenu{
+   margin: 0 auto !important;
+}
+.karim2{
+ width: 950px ;
+}
+
+.ja-megamenu ul.level0 li.mega a.mega{
+  color:#E6E3BB;
+  font-size:16px !important;
+  font-family: 'Cuprum-ff';
+  font-weight: normal !important;
+  padding: 8px 12px ;
+}
+.ja-megamenu a.over{
+ color:#ab4e39 !important;
+}
+
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Styling ---*/
+#ja-megamenu ul.level1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px !important;
+}
+
+.ja-megamenu ul.level1 li.mega {
+	background: url(../../images/bg-line-02.gif) 0 0 repeat-x;
+	margin-right: 0;
+	width: 100%;
+    	font-size: 11px !important;
+}
+
+.ja-megamenu ul.level1 li.first { background: none; }
+
+.ja-megamenu ul.level1 li.mega.group { background: none; }
+
+.ja-megamenu ul.level1 li.color-themes .group-content .megacol.first { margin-right: 20px; }
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	background: url(../../images/icon-circle.png) 0 12px no-repeat;
+	border: 0;
+	color: #666;
+	padding-left: 15px;
+	padding-right: 0;
+	text-transform: none;
+    font-size: 11px !important;
+    font-family: tahoma !important;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega:hover , .ja-megamenu ul.level1 li.mega a.over, .ja-megamenu ul.level1 li.mega a.active {
+	background: url(../../images/icon-circle-hover.png) 0 12px no-repeat;
+	border-bottom: none !important;
+	color: #ab4e39;
+}
+
+.ja-megamenu ul.level0 li.haschild a.mega span.menu-title {
+	background: url(../../images/arrow3.png) 100% 4px no-repeat;
+	padding-left: 0;
+	padding-right: 18px;
+}
+
+.ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title, .ja-megamenu ul.level0 li.haschild a.active span.menu-title {
+	background: url(../../images/arrow2.png) 100% 4px no-repeat;
+	padding-left: 0;
+	padding-right: 18px;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega span.menu-title { background: none; padding-right: 0; }
+
+.ja-megamenu ul.level1 li.color-themes a.mega { background: none; padding-left: 0; }
+
+ /* CHILD CONTENT
+-----------------------------------*/
+
+
+.ja-megamenu .childcontent-inner {
+	background-color: #202020;
+	border: 1px solid #333;
+	color: #666;
+	padding: 5px;
+    margin-top:-7px;
+    box-shadow: 0 0 3px #232323;
+	-webkit-box-shadow: 0 0 3px #232323;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.mid { padding-top: 15px; position: relative; }
+
+.ml {
+	background: url(../../images/icon-arrow-up-02.png) 0 0 no-repeat;
+	height: 9px;
+	left: 30px;
+	position: absolute;
+	top: 0px;
+	width: 16px;
+}
+
+.ja-megamenu .level1 .childcontent-inner { }
+
+.childcontent-inner-wrap .childcontent-inner-wrap  .ml { background: none; }
+
+.ja-megamenu .childcontent .ja-moduletable { color: #666; }
+
+.ja-megamenu .childcontent .ja-moduletable h3 {
+	background: none;
+	border-bottom: 1px dotted #ccc;
+	text-transform: uppercase;
+}
+
+/* Grouped --- */
+.ja-megamenu .group-title { padding: 0 10px; }
+
+.ja-megamenu .group-title .menu-title { color: #ccc; font-weight: bold; }
+
+
+.ja-megamenu ul.level1 li.mega .group-title a.mega {
+	background-image: url(../../images/pattern.png);
+	background-color: #222;
+    background-repeat: repeat;
+    background-position: 0 0;
+	border-bottom: 1px solid #343434;
+	font-family: "AbelRegular", Arial, sansserif;
+	font-weight: normal;
+	padding: 2px 15px;
+}
+
+
+.ja-megamenu ul.level1 li.mega .group-title a.mega:hover { border-bottom: 1px solid #343434 !important; }
+
+
+.ja-megamenu ul.level1 li.mega .group-title a.mega .menu-title { color: #AB4E39; font-size: 133%; font-weight: normal; }
+
+.ja-megamenu .group-title .menu-desc { color: #999; padding-left: 0 !important; }
+
+.ja-megamenu .megacol.column3 .group-title { width: 42%; }
+.ja-megamenu .group-content p img{border:4px solid #AB4E39;margin: 0 3px;}

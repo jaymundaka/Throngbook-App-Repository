@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* CATEGORY BLOG LAYOUT ----------------------------------*/
+
+div.blog h2 {
+	margin:0 0 15px;
+}
+
+
+div.items-row {
+	display: table-row;
+}
+
+div.cols-1 div.item {
+	width: 100%;
+	float: left;
+}
+
+div.cols-2 div.item {
+	width: 48%;
+	float: left;
+}
+div.cols-2 div.column-1 {
+	margin-right: 4%;
+}
+
+
+div.cols-3 div.item {
+	width: 30%;
+	float: left;
+}
+div.cols-3 div.column-1, div.cols-3 div.column-2 {
+	margin-right: 5%;
+}
+
+
+div.cols-4 div.item {
+	width: 22%;
+	float: left;
+}
+div.cols-4 div.column-1, div.cols-4 div.column-2, div.cols-4 div.column-3 {
+	margin-right: 4%;
+}
+
+div.blog .items-leading, div.blog .item {
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+
+/* ARTICLE-INFO */
+
+.articleInfoFooter {
+	display: block;
+	clear: both;
+}
+
+.articleInfoFooter dd {
+	float: left;
+}
+
+.articleInfoFooter .create {
+	margin-left: 0;
+}
+
+.article-info {
+	display: table;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.article-info .article-info-term {
+	display: none;
+}
+
+.article-info .createdby,
+.article-info .category-name,
+.article-info .published,
+.article-info .create,
+.article-info .modified,
+.article-info .hits {
+	width: auto;
+	float: left;
+	margin-right: 20px;
+}
+
+
+.article-info .category-name {
+	
+}
+
+.article-info .published {
+	
+}
+
+.article-info .createdby {
+	
+}
+
+.article-info .hits {
+	
+}
+
+div.items-more {
+	padding: 5px 0;
+	border-top: 1px dotted #fff;
+	border-bottom: 1px dotted #fff;
+	width: auto;
+}
+
+div.pagination {
+	display: block;
+	width: 100%;
+	border-top: 1px dotted #bbbbbb;
+	clear: left;
+	margin-top: 20px;
+}
+
+div.pagination div.ct_pagination {
+	display: inline-block;
+	width: auto;
+	margin-left: auto;
+}
+
+
+/* CATEGORY LIST LAYOUT ----------------------------------*/
+
+.display-limit {
+	 color:#999999;
+    font-family:"MavenProRegular","Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:0 10px 3px 0;
+}
+
+
+/* LIST ALL CATEGORYS ----------------------------------*/
+
+.category, .cat-children {
+	margin-top: 20px;
+}
+
+.categories-list ul, 
+.categories-list li,
+.cat-children ul,
+.cat-children li {
+	margin:0;
+	padding:0; 	
+}
+
+.categories-list ul, .cat-children ul {
+	list-style: outside;
+	list-style-image: url(../images/ul_arrow.png);
+	padding-left: 20px;
+}
+.categories-list ul li ul, .cat-children ul li ul {
+	margin: 5px 0 20px 0px;
+}
+
+.categories-list ul a, .cat-children ul a {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.categories-list ul li ul a, .cat-children ul li ul a {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.categories-list li, .cat-children li {
+	margin-bottom: 20px;
+}
+
+.categories-list ul li dt, .categories-list ul li dd {
+	display: inline;
+}
+
+
+/* LIST CONTACTS IN A CATEGORY ----------------------------------*/
+
+/*SINGLE CONTACT ----------------------------------*/
+
+.title {
+	padding-left: 20px;
+	margin: 10px 0 10px 0;
+}
+
+.title.pane-toggler {
+	background-image: url(../images/bg_icon_pane-toggler.png);
+	background-repeat: no-repeat;
+}
+
+.title.pane-toggler-down {
+	background-image: url(../images/bg_icon_pane-toggler_down.png);
+	background-repeat: no-repeat;
+}
+
+.contact-position {
+	font-size: 14px;
+	margin: 0 0 14px 0;
+}
+
+div.contact-address span {
+	font-style: normal;
+}
+
+div.contact-address span:after {
+	content: " / ";
+}
+
+.jicons-icons {
+	display: none;
+}
+
+.contact-image, .contact-details {
+	float: left;
+}
+
+.contact-image img {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	max-height: 250px;
+}
+
+.contact-details {
+	margin-left: 25px;
+}
+
+.contact-image img, .contact-details {
+	margin-bottom: 20px;
+}
+
+.contact-address, .contact-contactinfo span, .contact-vcard {
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
+.contact-address,
+.contact-emailto,
+.contact-telephone,
+.contact-fax,
+.contact-mobile,
+.contact-webpage,
+.contact-vcard {
+	height: 16px;
+	overflow: hidden;
+}
+
+.contact-address 	{background-position: 0 0;}
+.contact-emailto	{background-position: 0 -16px;}
+.contact-telephone	{background-position: 0 -32px;}
+.contact-fax		{background-position: 0 -48px;}
+.contact-mobile		{background-position: 0 -64px;}
+.contact-webpage	{background-position: 0 -80px;}
+.contact-vcard		{background-position: 0 -96px;}
+
+
+/*NEWSFEED ----------------------------------*/
+
+.feed-item-description {
+	border-bottom: 1px dotted #666;
+}
+
+.newsfeed ol {
+	padding-left: 25px;
+}
+
+.newsfeed ol li {
+	display: list-item;
+	clear: left;
+}
+
+.newsfeed li, .newsfeed ol li a {
+	font-size: 18px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.newsfeed ol li ul li a {
+	font-size: 12px !important;
+	margin-bottom: 5px;
+}
+
+.newsfeed ol li div {
+	display: block;
+	clear: left;
+}
+
+.newsfeed ol li ul {
+	padding-left: 15px;
+}
+
+.newsfeed img {
+	float: left;
+	clear: right;
+	margin: 0 5px 10px 0;
+}
+
+
+/* NEWSFLASH -------------------------------*/
+
+.ct_newsflashItemWrapper {
+	display: inline-block;
+	clear: both;
+	height: auto;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #999;
+	padding-bottom: 10px;
+}
+
+.ct_newsflashItemWrapper p {
+	margin-top: 5px;
+}
+
+.newsflash-title {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* ARCHIVED ARTICLES -------------------------------------*/
+
+.filter-search select {
+	margin-right: 7px;
+	width: auto;
+	float: left;
+}
+
+#archive-items {
+	list-style: none;
+	padding-left: 0;
+}
+
+#archive-items li.row1 {
+	margin-top: 20px;
+}
+
+#archive-items li h2, #archive-items li h2 a {
+	margin-bottom: 7px !important;
+}
+
+
+/* SEARCH FILTERS ---------------------------------------*/
+
+.filterTable legend, .filterTable label {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 24px;
+	height: 24px;
+}
+
+.filterTable select {
+	width: auto;
+}
+
+.phrases-box label, .only-box label {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.filterTable button {
+	display:table-cell;
+	margin: 0;
+	top: -1px;
+}
+
+#search-searchword-wrapper, #search-button-wrapper {
+	display:table-cell;
+	height: 24px;
+}
+#search-button-wrapper {
+	display:table-cell;
+	width: 1%;
+}
+
+.filterTable #search-searchword {
+	width: 97%;
+}
+
+
+/* SEARCH RESULTS ---------------------------------------*/
+
+#searchForm label, #searchForm legend {
+	display: inline-block;
+}
+
+.search-results .result-title {
+	margin-top: 20px;
+}
+
+.search-results .result-title, .search-results .result-title a {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+.icon_searchresult_com_content,
+.icon_searchresult_com_category,
+.icon_searchresult_com_contact {
+	background-repeat: no-repeat;
+	height: 16px;
+	width: auto;
+	display: inline-block;
+	margin: 3px 0 6px 0;
+	padding-left: 20px;
+	
+}
+
+.icon_searchresult_blank {
+	margin: 3px 0 6px 0;
+}
+
+.result-category span.small {
+	height: 16px !important;
+	line-height: 16px;
+}
+
+/* USER REGISTRATION ------------------------------------*/
+
+.registration legend {
+	display: block;
+	font-family: "MavenProRegular", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	font-weight: normal !important;
+	/*color: #9bc800 !important;*/
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	width: auto;
+	font-size: 30px;
+	line-height: 30px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+	margin-bottom: 18px;
+}
+
+
+/* SUBMIT WEBLINK ------------------------------------*/
+
+form#adminForm {
+	width: auto;
+}
+
+
+/* AJAX VOTING PLUGIN  ------------------------------------*/
+
+.cdajaxvote {
+    line-height:15px !important;
+}
+
+.cdajaxvote .ui-stars-star,
+.cdajaxvote .ui-stars-star a,
+.cdajaxvote .ui-stars-cancel,
+.cdajaxvote .ui-stars-cancel a {
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	height: 15px !important;
+	width: 15px !important;
+}
+
+.cdajaxvote .ui-stars-star,
+.cdajaxvote .ui-stars-star a {
+	padding-left: 3px;
+}
+
+.cdajaxvote .ui-stars-cancel,
+.cdajaxvote .ui-stars-cancel a {
+	margin-right: 3px;
+}
+
+.cdajaxvote .ui-stars-star-on a {
+	background-image: url(../images/voting-star_on.png) !important;
+}
+.cdajaxvote .ui-stars-star-hover a {
+	background-image: url(../images/voting-star_hover.png) !important;
+}
+
+.cdajaxvote .ui-stars-cancel a {
+
+}
+.cdajaxvote .ui-stars-cancel-hover a {
+	background-position: -15px 0px;
+}

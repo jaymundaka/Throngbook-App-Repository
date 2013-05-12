@@ -1,0 +1,227 @@
+/**
+ * @package		JomSocial
+ * @subpackage 	Template 
+ * @copyright 	(C) 2011 by Slashes & Dots Sdn Bhd - All rights reserved!
+ * @license		GNU/GPL, see LICENSE.php
+ */
+
+a:hover,
+a:focus
+{
+	outline: none !important;
+}
+
+
+/**- RESET HEADING -**/
+
+.reset-h
+{
+	.reset-shape();
+	.reset-space();
+	line-height: normal;
+}
+.componentheading
+{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+
+
+
+/**- RESET SMALL -**/
+
+.small,
+small {
+	color: #999;
+	font-size: 90% !important;
+	margin: auto;
+}
+
+
+
+/**- RESET LIST -**/
+
+.cResetList,
+.cResetList li 
+{
+	list-style: none;
+	list-style-image: none;
+	line-height: inherit;
+	.reset-shape();
+	.reset-space();
+}
+
+
+
+/**- FLOATED LIST -**/
+
+.cFloatedList li,
+.cThumbsList li,
+.cThumbsList li a
+{
+	display: inline-block;
+	float: left;
+}
+.cFloatedList li.cFloat-R
+{
+	float: right;
+}
+
+
+
+
+/**- FLOAT CLEAR -**/
+
+.clear
+{
+	clear:both;
+	font-size: 0 !important;
+	height: 0 !important;
+	line-height: 0 !important
+}
+.clearfix
+{
+	clear:none;
+	display:block;
+	height:auto;
+	overflow:visible;
+	zoom:1;
+
+	&:after
+	{
+		content:".";
+		clear:both;
+		display:block;
+		height:0;
+		visibility:hidden
+	}
+}
+.clearfull
+{
+	display: inline-block;
+	width: 100%
+}
+
+
+
+
+/**- FLOATED LIST -**/
+
+.cResetTable,
+.cResetTable tr,
+.cResetTable td,
+.cResetTable th
+{
+	background: none;
+	border: 0;
+	border-collapse: collapse; 
+	border-spacing: 0;
+	font-weight: normal;
+	line-height: inherit;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	float: none;
+}
+.cResetTable th
+{
+	font-weight: bold;
+}
+
+
+
+
+/**- EMPTY -**/
+
+.cEmpty
+{
+	color: #999;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+
+
+
+/**- ALERT -**/
+
+.cAlert
+{
+	background-color: #FCF8E3;
+	border: 1px solid #ddc8a5;
+	.border-radius( 3px );
+	color: #C09853;
+	margin:0 0 @base-height;
+	padding:10px;
+
+	p
+	{
+		margin: 0 0 10px;
+	}
+
+	&.alert-info
+	{
+		background-color: #e3e6ee;
+		border-color: #B9C3DC;
+		color: #374e70;
+	}
+
+	&.alert-error
+	{
+		background-color: #F2DEDE;
+		border-color: #cda6ab;
+		color: #B94A48;
+	}
+
+	&.alert-success
+	{
+		background-color: #DFF0D8;
+		border-color: #b6cca3;
+		color: #468847;
+	}
+	&.cEmpty
+	{
+		padding: 50px 0;
+	}
+}
+
+
+
+
+/**- SEPERATOR -**/
+
+.cSeperator
+{
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+
+
+/**- FLOATS -**/
+
+.cFloat-L
+{
+	float:left;
+}
+.cFloat-R
+{
+	float:right;
+}
+
+
+
+/**- LOADING GIF -**/
+#cwin-wait,
+.loading
+{
+	display: none;
+	width: 16px;
+	height: 11px;
+	background: url(../images/mini-loader.gif);
+}

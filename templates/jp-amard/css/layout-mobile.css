@@ -1,0 +1,198 @@
+.tpf{}
+body {  -webkit-text-size-adjust: 100%; /*Fix Mobile Safari Font Scale*/}
+#ja-content ,#ja-inset2{ width: 100% !important; min-height: 0% !important;}
+#ja-content-main ,#ja-current-content{ min-height: 0% !important;}
+.ja-content-main{ padding: 10px !important;}
+.items-row p img, .item-page p img, .items-leading p img{ width: 100%;}
+.category-desc img{width: 97%;}
+div.itemListCategory img{  width: 97% !important;}
+span.catItemImage img ,span.itemImage img ,span.userItemImage img {width: 94% !important;}
+div.subCategoryContainer { width: 100% !important;}
+.subCategory { height: auto !important ;}
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img{ width: 80% !important;}
+ select, .inputbox {  width: 94%;}
+#form-login-username .inputbox, #form-login-password .inputbox{  width: 200px;}
+.contact-info-wrap , .contact-form-wrap{   width: 100%;}
+.contact-form-wrap{  border-top:3px solid #8E4524;}
+/* RESPONSIVE FONT SIZES
+--------------------------------------------------------- */
+body.fs1 #ja-wrapper {  font-size: 12px !important;}
+body.fs2 #ja-wrapper {  font-size: 13px !important;}
+body.fs3 #ja-wrapper {  font-size: 14px !important;}
+body.fs4 #ja-wrapper {  font-size: 15px !important;}
+body.fs5 #ja-wrapper {  font-size: 16px !important;}
+body.fs6 #ja-wrapper {  font-size: 17px !important;}
+/* Headings & Titles ---*/
+h1 {  font-size: 1.5em !important;}
+h2 {  font-size: 1.45em !important;}
+h3 {  font-size: 1.4em !important;}
+h4 {  font-size: 1em !important;}
+h5 {  font-size: 1em !important;}
+div.catItemCommentsLink, div.userItemCommentsLink,.catItemAuthor{font-size: 0.9em !important}
+#ja-bot-1 .acymailing_form .inputbox{  font-size: 14px; width: 200px;}
+#ja-bot-1 .acysubbuttons .button {    font-size: 12px;   margin-top: -44px;}
+#ja-bot-1 .ja-box-right{
+  border-top: 3px solid #8E4323 ;}
+#ja-bot-1 .ja-box-left{   background: none;}
+.contentheading {  font-size: 1.5em !important;}
+.blog-featured .contentheading {  font-size: 1.5em !important;}
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+.main {  width: 100%;}
+.column {  float: none;  width: 100% !important;  position: relative;}
+/* MASONRY PRESETS (240px*5 Grids)
+--------------------------------------------------------- */
+/* Sizes---*/
+.ja-masonry {  width: 49%;}
+.grid-double,
+.grid-tripple {  width: 100%;}
+/* Main Content */
+#ja-content,
+.ja-frontpage #ja-content {  float: none;  width: 100%; /* Frontpage Content */}
+/* full 5 grids content */
+body.content-grid-mass #ja-content,
+body.content-grid-mass.ja-frontpage #ja-content {  width: 100% !important;}
+/* 4 grids content */
+body.content-grid-quadruple #ja-content,
+body.content-grid-quadruple.ja-frontpage #ja-content {
+  width: 100% !important;
+}
+/* 3 grids content */
+body.content-grid-tripple #ja-content,
+body.content-grid-tripple.ja-frontpage #ja-content {
+  width: 100% !important;
+}
+/* 2 grids content */
+body.content-grid-double #ja-content,
+body.content-grid-double.ja-frontpage #ja-content {
+  width: 100% !important;
+}
+
+/* 1 grids content */
+body.content-grid-single #ja-content,
+body.content-grid-single.ja-frontpage #ja-content {
+  width: 100% !important;
+}
+
+/* CONTENT'S GRIDS
+--------------------------------------------------------- */
+/* Items Page */
+.item-page {  padding: 1em;}
+/* Items Row */
+.item {  padding: 1em 0;}
+.item .contentpaneopen {  padding: 1em;}
+/* Items Leading */
+.leading .contentpaneopen {  padding: 1em;}
+/* Items Grids */
+.item {  float: none;  width: 100% !important;}
+.cols-1 .item,
+.cols-2 .item,
+.cols-3 .item,
+.cols-4 .item,
+.cols-5 .item {  width: 100% !important;}
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {}
+#ja-header .main { text-align: center;  width: 100%;}
+#ja-header .main-inner1 {  margin: 0;}
+h1.logo {  height: 0px !important;  width: 100% !important;}
+h1.logo a {  height: 40px !important;  margin-top: 10px; padding: 0 !important; background-image: url(../images/mon-tab-logo.png);}   
+/* Search & Social Bars ---*/
+#ja-header .main{ padding: 0px !important;}
+h1.logo a{  margin-top: 3px !important;}
+#ja-top {  height: 0px;  width: 100%;  position: relative;  right: 0;  top: 0px;}
+/* Search */
+#ja-search {top: 0px; height: 26px; width: 30px;  padding: 3px 0 1px !important;}
+#ja-search:hover{ background: #25282A !important; border: none !important;}
+#ja-search .search-btn { width: 30px;  height: 30px;}
+#ja-search.active .search-btn,
+#ja-search .search-btn:hover {}
+#ja-search form.search {  display: none;  position: absolute; top: 34px;  width: 200px; right: 0; border-radius: 5px 5px 5px 5px;}
+#ja-search:hover form.search,
+#ja-search.active form.search { display: block !important;}
+#ja-search .inputbox {  background: #222;  border: 1px solid #222;  color: #CCC;  margin: 0;  padding: 4px 0;  text-indent: 10px;  width: 100%;}
+/* Social */
+#ja-social {  height: 40px;}
+#ja-social ul {  padding: 5px 0 0 1em;}
+#ja-social ul li {
+}
+#ja-social ul li a {background-color: #222;}
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer { font-size: .8em; }
+/* MODULES
+--------------------------------------------------------- */
+div.ja-moduletable-inner,
+div.moduletable-inner {
+  padding: 1em;
+}
+/* Hiden in Mobile ---*/
+.hide-in-normal,
+.hide-in-tablet,
+.hide-in-mobile {
+  display: none;
+}
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+/* Main Nav ---*/
+#ja-mainnav { clear: both; display: block; float: right; height: auto; margin: 0 auto; text-align: left;width: 100%;}
+/* Mega Menu Layout ---*/
+.ja-megamenu { clear: both; display: none !important; height: auto; border-bottom: 1px solid #333;}
+.rjd-active .ja-megamenu { display: block !important; /* Show menu when active */ border-top:2px solid #8E4524;}
+.ja-megamenu ul.level0 li.mega {height: auto !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+.ja-megamenu ul.level0 li.mega a.mega { height: auto !important;margin: 0 !important; padding: 1em !important;}
+.ja-megamenu ul.level0 li.mega span.menu-title,
+.ja-megamenu ul.level0 li.haschild span.menu-title { font-size: 1em !important; margin: 0 !important; padding: 0 !important;  text-transform: none !important;}
+.ja-megamenu ul.level1 li.mega span.menu-title {  margin-top: 0 !important;}
+.ja-megamenu ul.level1 li.mega {  height: auto !important;}
+.ja-megamenu ul.level1 li.mega a.mega {height: auto !important;}
+.ja-megamenu ul.level0 li.mega span.menu-desc {  display: none;}
+#ja-megamenu .childcontent {  display: none !important;}
+#ja-megamenu li.rjd-active {  background: #222;}
+#ja-megamenu li.rjd-active .childcontent {display: block !important; left: 0 !important;  margin: 0 !important;position: absolute;top: 40px !important; width: 100% !important;}
+#ja-megamenu ul.level0 li.rjd-active .childcontent-inner-wrap,
+#ja-megamenu ul.level0 li.rjd-active .childcontent-inner {  margin: 0 !important; width: 100% !important;}
+#ja-megamenu ul.level0 {  position: relative;}
+/*Hide lv 2 Content */
+#ja-megamenu ul.level1 li.rjd-active .childcontent,
+#ja-megamenu ul.level1 .childcontent { display: none !important;}
+/* Mega Menu Stylings --- */
+.ja-megamenu { background: #222 !important;}
+.ja-megamenu ul.level0 li.mega {  background: url(../images/right-li.png) repeat-x bottom;}
+/* Menu Button --- */
+/* to use this value to detect responsive
+ * > 3: mean responsive
+ * 4: is mobile device, which the menu show only first level
+ */
+#ja-menu-button {  display: block;  background: url(../images/mob-menu.png) no-repeat top left; width: 40px; height: 40px;  float: right;  padding: 0;   margin-right: 25px;  z-index: 4;  margin-top: 10px;  margin-bottom: 6px; border-radius: 20px;}
+
+#ja-menu-button:hover,
+.rjd-active #ja-menu-button {  cursor: pointer;  box-shadow:0 0 11px 1px #000000; margin-bottom: 6px;}
+#ja-login{  top: 3px;}
+#btl .btl-panel > span{  border:none !important;     font-weight: normal;   margin: 2px 0 !important;    font-size: 12px !important;}
+#ja-lang{ top: 1px;  width: auto;}
+#ja-lang ,#ja-login ,#btl .btl-panel > span ,#ja-search { border:none !important;     background: #25282A !important;      box-shadow: none !important;        position: relative;  border-radius: 0 !important;}
+#contact-form dl dt {  float: none;}
+#contact-form dl dd { margin-left: 0 !important;}
+#contact-form dl dd input.required,
+#contact-form dl dd textarea.required { width: 60% !important;}
+.djslider-loader ,.djslider ,.slider-container {width: 99% !important;  height: 150px !important;}
+.slider-container ul li{   height: 150px !important;}
+.slider-container ul li img{ height: 150px !important;}
+.slider-container .slide-desc ,.prev-button ,.next-button{display: none  !important;}
+.navigation-container-custom{ left:1% !important;right: auto !important; background: none; border:none !important; top: 0 !important; width: 14px;}
+span.load-button{ margin: 3px 0 !important;}
+.st-menu ,.fixed { display: none !important;}
+.btl-field, #register-link, .btl-error-detail, .btl-error, .btl-note{ margin-left: 10px; margin-right: 10px !important;}
+div.btl-buttonsubmit { margin: 10px 10px 30px;}
+#simplemodal-container , .btl-formregistration,#simplemodal-container { width: 278px !important;}
+.btl-content-block {width: 276px !important;}
+.simplemodal-wrap{width: 286px !important;}
+#btl-content-registration{	min-width:275px !important;}
+.btl-input input[type="text"], .btl-input input[type="password"] {  width: 133px !important;}
+div.itemComments {  width: 98% !important;  margin-left: -10px !important;}
+div.itemCommentsForm form input.inputbox ,div.itemCommentsForm form textarea.inputbox{
+  width: 92%;
+}
+#btl-content #btl-content-profile ,#btl-content #btl-content-profile #module-in-profile > div{  min-width: 233px !important;  width: 233px !important;}

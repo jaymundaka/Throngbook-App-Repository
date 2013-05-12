@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+	<name>jp-amard</name>
+	<description>free joomplate template</description>
+	<date>2012</date>
+	<version>1.0.0</version>
+	<author>joomplate</author>
+	<copyright>joomplate</copyright>
+	<stylesheets>
+		<file>css/typo.css</file>
+	</stylesheets>
+	<scripts>
+	</scripts>
+</theme>

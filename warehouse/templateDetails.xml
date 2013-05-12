@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade">
+	<name>warehouse</name>
+	<creationDate>May 2012</creationDate>
+	<author>Robin Jungermann - Crosstec GmbH &amp; Co. KG</author>
+	<copyright>Copyright © 2012 Robin Jungermann</copyright>
+        <licence>GNU/GPL 2.0</licence>
+	<authorEmail>info@crosstec.de</authorEmail>
+	<authorUrl>http://crosstec.de</authorUrl>
+	<version>1.1</version>
+        <description>warehouse - an easy-to-use Joomla! website template</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>languages</folder>
+		<folder>system</folder>
+		<folder>content_images_source</folder>
+		<folder>bg_images_source</folder>
+		<folder>images_source</folder>
+		<folder>elements</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.tpl_warehouse.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_warehouse.sys.ini</language>
+	</languages>
+	
+	<positions>
+		<position>loginHeader</position>
+		<position>searchHeader</position>
+		<position>mainNav</position>
+		<position>slider</position>
+		<position>highlights_1_1</position>
+		<position>highlights_1_2</position>
+		<position>highlights_1_3</position>
+		<position>highlights_1_4</position>
+		<position>breadcrumbs</position>
+		<position>maincontent_1_1</position>
+		<position>maincontent_1_2</position>
+		<position>maincontent_1_3</position>
+		<position>maincontent_1_4</position>		
+		<position>maincontent_2_1</position>
+		<position>maincontent_2_2</position>
+		<position>maincontent_2_3</position>
+		<position>maincontent_2_4</position>		
+		<position>left</position>
+		<position>right</position>
+		<position>footer_1_1</position>
+		<position>footer_1_2</position>
+		<position>footer_1_3</position>
+		<position>footer_1_4</position>		
+	</positions>
+	
+	<config>
+		<fields name="params" addpath="/templates/warehouse/elements" addfieldpath="/templates/warehouse/elements">
+			<fieldset name="advanced">
+				
+				<field name="logo" type="media"
+					label="Logo"
+					description="Upload a logo for the site header."/>
+										
+				<field name="sitewidth" type="text" size="10" default="800" 
+					label="Template Width" 
+					description="Set the template width."
+					filter="int" />
+					
+				
+				<field name="mainnav_position" type="radio" default="left" label="Main Menu Position" description="Chose the Position of your Logo and Main Menu">
+					<option value="top">top</option>
+					<option value="left">left</option>
+				</field>
+				
+				<field name="font" type="list" default="arvo"
+					label="Font"
+					description="Select a font">
+					<option value="arvo">Arvo</option>
+					<option value="bebas">Bebas</option>
+					<option value="charis">Charis</option>
+				</field>
+				
+				<field name="bg_style" type="list" default="04"
+					label="Background style"
+					description="Select a background style">
+					<option value="01">smooth noise</option>
+					<option value="02_multiply">dark wood</option>
+					<option value="03">concrete</option>
+					<option value="04">rough wall</option>
+				</field>
+				
+                                
+                                <field type="spacer" class="text" label="&lt;a href='http://crosstec.de/en/joomla-templates.html' target='_blank'&gt;&lt;b style='color:red;text-decoration: underline'&gt;Get this template with footer removal, color picker and more options from here!&lt;/b&gt;&lt;/a&gt;" />
+				
+				
+				
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

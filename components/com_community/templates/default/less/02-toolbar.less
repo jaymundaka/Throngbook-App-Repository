@@ -1,0 +1,151 @@
+@toolbarActive			: #647F29;
+@toolbarActiveBorder	: #4f661d;
+@toolbarBarHeight		: 6px;
+@toolbarMargin			: 20px;
+
+
+.cToolBar
+{
+	background: url(../images/bar-bg.png) bottom repeat-x #d1d1b0;
+	.border-radius( 4px 4px 0 0);
+	border: 1px solid rgba(0,0,0,0.08);
+	border-bottom: 0;
+	font-size: 12px;
+	padding: 10px 10px @toolbarBarHeight;
+	margin: 0 0 @toolbarMargin;
+	position: relative;
+	z-index: 20;
+
+	a
+	{
+		color: #fff;
+		display: block;
+		text-decoration: none !important;
+		white-space: nowrap;
+	}
+	> li 
+	{
+		float: left;
+		display: inline-block;
+		position: relative;
+
+		&.cFloat-R
+		{
+			float: right;
+		}
+	}
+	.cMenu-Text
+	{
+		+ .cMenu-Text
+		{
+			margin: 0 0 0 3px;
+		}
+		+ .cMenu-Icon
+		{
+			margin: 0 0 0 10px;
+		}
+
+		> a
+		{
+			background: #404040;
+			border: 1px solid #222;
+			border-bottom: 0;
+			.border-radius( 3px 3px 0 0);
+			font-weight: bold;
+			line-height: 20px;
+			height: 20px;
+			padding: 4px 8px;
+		}
+		> a.active,
+		&:hover > a
+		{
+			background: @toolbarActive;
+			border-color: @toolbarActiveBorder;
+			.box-shadow( 0 1px 0 rgba( 255,255,255,0.1) inset );
+		}
+	}
+	.cHas-Childs
+	{
+		ul
+		{
+			border-top: 1px solid @toolbarActiveBorder;
+			
+
+			.box-shadow( 0 1px 1px rgba(0, 0, 0, 0.5) );
+			.border-radius( 0 0 2px 2px );
+			display: none;
+			position: absolute;
+			left: 0;
+			z-index: 99998;
+			margin-top: -1px;
+
+			li
+			{
+				border: 1px solid @toolbarActiveBorder;
+				border-top: 0;
+
+				&:last-child
+				{
+					.border-radius( 0 0 2px 2px );
+				}
+			}
+			a
+			{
+				background: @toolbarActive;
+				color: #dce4cb;
+				font-size: 11px;
+				line-height: 20px;
+				padding: 5px 30px 5px 10px;
+
+				&:hover
+				{
+					color: #fff;
+				}
+			}
+		}
+		&:hover
+		{
+			ul { display: block; }
+
+			a { position: relative; z-index: 99999; }
+			
+		}
+	}
+	.cMenu-Icon
+	{
+		+ .cMenu-Icon
+		{
+			margin: 0 0 0 5px;
+		}
+		a
+		{
+			.border-radius( 3px );
+			position: relative;
+			margin: 4px 0 0;
+
+			&:hover,
+			&:focus,
+			&.active
+			{
+				background: #e8e8d8;
+			}
+
+			b
+			{
+				background: #ea0000;
+				border-bottom: 1px solid #111;
+				.border-radius( 3px );
+				font: bold 9px/14px Tahoma,'Lucida Grande',Arial,sans-serif;
+				padding: 0 3px;
+				position: absolute;
+				right: -1px;
+				top:-5px;
+			}
+		}
+
+		+ .cMenu-Text
+		{
+			margin: 0 0 0 10px;
+		}
+	}
+}

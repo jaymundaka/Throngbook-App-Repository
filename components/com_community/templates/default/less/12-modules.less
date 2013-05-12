@@ -1,0 +1,394 @@
+/**
+* COMMUNITY :.app-box
+* this class is reusable across the JomSocial application
+*/
+.app-box {
+	border: 1px solid @app-border;
+	border-bottom-color: @app-shade;
+	.border-radius(3px);
+	.box-shadow( 0 1px 0 rgba(0,0,0,0.05) );
+	margin: 0 0 15px;
+	padding: @app-fat;
+	position: relative;
+
+	&.control-admin
+	{
+		background: #fff9d5;
+		border-color: #eae2ac #eae2ac #dad092;
+
+		.app-box-header
+		{
+			cursor: pointer;
+			border-color: #eae2ac;
+		}
+
+		.app-box-list li
+		{
+			border-color: #eae2ac;
+		}
+	}
+	&.control-approval
+	{
+		background: #e3e6ee;
+		border-color: #B9C3DC #B9C3DC #a5afc8;
+
+		a
+		{
+			background: none !important;
+			color: #095197;
+			text-decoration: none;
+
+			&:hover
+			{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.app-box-header 
+{
+	border-bottom: 1px solid #ddd;
+	color: #4E6221;
+	font-size: 100% !important;
+	line-height: 20px;
+	text-shadow: none;
+	margin: 0 0 @app-fat;
+	padding: (@app-fat - 5) 0 @app-fat;
+	font-weight: bold !important;
+}
+.app-box-cog
+{
+	background: none !important;
+	margin-top: (@app-fat - 5);
+}
+.app-box-filter 
+{
+	margin: 0 0 @app-fat+5;
+	font-size: 0;
+
+		a,
+		b
+		{
+			font-size: 11px;
+			display: inline-block;
+		}
+		a:focus,
+		a.active-state
+		{
+			background: none;
+			color: inherit;
+			text-decoration: none;
+		}
+		b
+		{
+			color: #999;
+			margin:0 3px;
+			position: relative;
+			top: 2px;
+		}
+}
+.app-box-content 
+{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+
+@appListIconSpacing : 25px;
+
+.app-box-list
+{
+	li
+	{
+		+ li
+		{
+			padding-top: @app-fat/2 + 2;
+			margin-top: @app-fat/2 + 2;
+			border-top: 1px dotted #ddd;
+		}
+	}
+	&.for-menu
+	{
+		li
+		{
+			padding-left: @appListIconSpacing;
+
+			a
+			{
+				line-height: 20px;
+			}
+
+			i
+			{
+				float: left;
+				margin:0 0 0 -@appListIconSpacing;
+			}
+		}
+	}
+	
+}
+.app-box-footer 
+{
+	border-top: 1px solid #ddd;
+	font-size: 90%;
+	margin-top: @app-fat;
+	padding-top: @app-fat;
+	text-align: right;
+}
+.app-box.collapse
+{
+	.app-box-filter,
+	.app-box-footer,
+	.app-box-content
+	{
+		display: none
+	}
+}
+
+
+
+
+
+@thumb-size		: 48px;
+
+.cThumbsList
+{
+	margin: -7px 0 0 -5px;
+
+	li
+	{
+		margin: 7px 0 0 5px;
+	}
+	.cAvatar
+	{
+		.square( @thumb-size );
+
+		&.cMediaAvatar
+		{
+			.size( 101px, auto );
+		}
+	}
+}
+.cThumbDetails
+{
+	li
+	{
+		display: inline-block;
+		width: 100%;
+		
+		+ li
+		{
+			padding-top: @app-fat/2 + 2;
+			margin-top: @app-fat/2 + 2;
+			border-top: 1px dotted #ddd;
+		}
+	}
+}
+/* We seperate below classes from .cThumbDetails for CSS scaling and class recycling purpose */
+.cThumb-Avatar
+{
+	.cAvatar
+	{
+		.square( @thumb-size );
+
+		&.cVideo-Thumb
+		{
+			background-position: center;
+			background-color: transparent;
+			background-size: 90px auto;
+		}
+	}
+}
+.cThumb-Calendar
+{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 46px;
+
+	b { background:#f5f5f5; display: block; font: 9px/19px Tahoma,Arial,sans-serif; text-align: center; text-transform: uppercase;  }
+	b + b { background: #fff; border-top: 1px solid #ccc; border-bottom: 2px solid #eee; font: bold 17px/32px Arial,sans-serif; }
+}
+.cThumb-Detail
+{
+	margin: 0 0 0 (@thumb-size + 5);
+}
+.cThumb-Title
+{
+	font-weight: bold;
+}
+.cThumb-Brief
+{
+	margin: 3px 0 0;
+}
+
+
+
+/*
+* COMMUNITY :TOGGLE EXPAND / COLLAPSE MENU
+* this class is reusable across the JomSocial application
+*/
+.app-box-menu.toggle .app-box-menu-icon {
+	background-position: -16px 0
+}
+.app-box.collapse .app-box-menu.toggle .app-box-menu-icon {
+	background-position: -32px 0
+}
+
+/*
+* EVENT'S MODULE
+*/
+#community-event-nearby-listing,
+.community-calendar-result .happening_title
+{
+	border-top: 1px dashed #ddd;
+	display: block;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.community-calendar-result .happening_title
+{
+	margin-bottom: 10px;
+}
+#community-event-nearby-listing
+{
+	* 
+	{
+		line-height: normal;
+	}
+	> p 
+	{
+		margin: 0 0 10px;
+		font-weight: bold;
+	}
+}
+.cEventNearby
+{
+	li + li
+	{
+		border-top: 1px dotted #ddd;
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+}
+
+
+
+/*
+* EVENT'S CALENDAR
+*/
+
+.cCalendar
+{
+	width: 100%;
+
+	th,
+	td
+	{
+		border: 1px solid #ccc;
+		text-align: center;
+		text-transform: uppercase;
+		width: 14.2857%;
+	}
+	th 
+	{ 
+		font-size: 11px;
+	}
+	th,
+	tr + tr td
+	{
+		padding: 5px 0;
+	}
+	tr + tr td
+	{
+		background: #f5f5f5;
+		color: #888;
+	}
+	.selected
+	{
+		color: #555;
+		font-weight: bold;
+	}
+	[class^="event_date"],
+	[class*=" event_date"]
+	{
+		background: #fff;
+	}
+	.running,
+	.midrunning
+	{
+		background: #ffd !important;
+		cursor: pointer;
+	}
+
+	div.calendar-month
+	{
+		background: #f5f5f5;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+
+		> span
+		{
+			display: inline-block;
+			line-height: 20px;
+			height: 20px;
+			width: auto;
+			margin: 5px 3px;
+		}
+		.calendar-prev,
+		.calendar-next
+		{
+			opacity: 0.5;
+			cursor: pointer;
+
+			&:hover
+			{
+				opacity: 0.8;
+			}
+		}
+		.calendar-prev
+		{
+			float: left;
+		}
+		.calendar-next
+		{
+			float: right
+		}
+	}
+}
+
+.community-calendar-result .happening_title
+{
+	border-top: 1px dashed #ddd;
+	display: block;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+/*
+* FRONTPAGE SEARCH
+*/
+.cSearch-Box
+{
+	position: relative;
+	padding-right: 38px;
+
+	.cButton-Search
+	{
+		background: none !important;
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		margin-top: -10px;
+		opacity: 0.3;
+	}
+	input
+	{
+		padding-right: 30px;
+	}
+	input:focus + .cButton-Search
+	{
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'pars-ff';
+    src: url('../font/fa/BYekan.eot');
+    src: url('../font/fa/BYekan.eot?#iefix') format('embedded-opentype'),
+         url('../font/fa/BYekan.woff') format('woff'),
+         url('../font/fa/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#errorboxheader-des ,.errormenu ,.errormenu a ,.home,.home a{
+ font-family: pars-ff;
+}
+#outline {
+    left: 568px;
+}
+
+#errorboxheader-des{
+ left: 60px;
+ right: auto;
+ top:10px;
+}
+.errormenu{
+font-style: normal;
+ text-align: center;
+   width: 560px !important;
+}
+
+.home{
+    right: 195px;
+    left: auto;
+    position: absolute;
+    top: 16px;
+}
+ .home a{
+   font-size: 25px !important;
+ }
+
+.logok{
+    background-image:  url(../images/rtl/rtl-logo.png);
+}

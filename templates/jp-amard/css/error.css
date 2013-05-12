@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Mendozite template for Joomla 2.5.x 
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* Start Common Styles */
+
+* {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	color: #FFE8CE;    
+}
+
+html {
+	height: 100%;
+}
+
+body {
+  background: url(../images/bckg.jpg) no-repeat center top #222;
+  background-size: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	margin-bottom: 1px;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.headerk{
+   width: 960px !important;
+   position:  relative;
+   display: block;
+   height: 60px;
+   background: url(../images/header.png) repeat-x bottom #272A2D;
+   border-bottom: 1px solid #111111;
+   margin: 0 auto;
+   padding: 10px 10px 0 10px;
+   border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+.logok{
+    background-image: url("../images/logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    bottom: 9px;
+    display: block;
+
+    height: 49px;
+    padding-right: 10px;
+    width: 160px;
+}
+.home{
+    left: 180px;
+    position: absolute;
+    top: 25px;
+}
+.home a{
+   color:#E6E3BB !important;
+    font-size:16px !important;
+    text-decoration: none !important;
+}
+.home a:hover{
+  color:#ab4e39!important;
+}
+
+.error {
+	width: 330px;
+    	height:450px;
+    background: url(../images/404.png) no-repeat ;
+    right: 300px;
+      top: 1%;
+	position: relative;
+      margin: 0 auto;
+}
+#outline{
+position: relative;
+ margin: 0 auto;
+  width: 586px;
+left: 330px;
+}
+
+#errorboxheader {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+    width: 491px;
+	font-size: 290px;
+	color: #DAD191;
+	font-weight: bold;
+     margin: 0 auto;
+    text-shadow: 4px -6px 5px #000000;
+}
+#errorboxheader-des{
+	font-family: arial , sans-serif;
+    position: absolute;
+    right: 40px;
+    top:17px;
+    padding: 6px 16px;
+	font-size: 25px;
+	color: #DAD191;
+    margin: 0 auto;
+    background: url("../images/m-c-b.png")  repeat-x top #292D30;
+     border-color: #353536 #2E2F31 #414246 !important;
+    border-radius: 4px 4px 4px 4px !important;
+    border-style: solid !important;
+    text-shadow: 1px 0px 1px #000000;
+    border-width: 1px !important;
+}
+
+.errormenu {
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 214%;
+	position: relative;
+     width: 560px;
+     margin: 0 auto;
+         text-shadow: 1px 0px 1px #000000;
+
+}
+
+
+.errormenu a {
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 160%;
+	text-decoration: none;
+	color: #9BDB73;
+}
+.errormenu a:hover {
+ 	color: #ab4e39;
+}

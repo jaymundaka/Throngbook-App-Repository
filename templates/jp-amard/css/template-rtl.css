@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'pars-ff';
+    src: url('../font/fa/BYekan.eot');
+    src: url('../font/fa/BYekan.eot?#iefix') format('embedded-opentype'),
+         url('../font/fa/BYekan.woff') format('woff'),
+         url('../font/fa/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.validate , table.category thead tr th ,.jitem-title ,#ja-bot-1 .acysubbuttons .button ,.items-more h3 ,h1.contentheading, h2.contentheading, .contentheading ,.item .contentpaneopen , p.readmore a, #ja-lang ,#ja-search ,#ja-login ,#ja-mainnav ,#ja-search form.search .inputbox ,.ja-megamenu ul.level0 li.mega a.mega
+,div.subCategory h2 ,div.itemListSubCategories h3 ,div.itemListCategory h2 ,div.catItemHeader h3.catItemTitle ,div.itemHeader h2.itemTitle ,.itemAuthorName ,div.itemAuthorLatest h3 ,div.itemRelated h3 ,div.itemCommentsForm form input.inputbox ,div.itemCommentsForm form textarea.inputbox ,div.itemCommentsForm h3
+,div.ja-moduletable h3, div.moduletable h3, div.ja-module h3, div.module h3 ,#ja-content-main .contact h3 ,.contact-form legend ,.contact-form form label
+,.contact-form-wrap input, .contact-form-wrap select, .contact-form-wrap textarea, .contact-form-wrap .inputbox
+,input.btl-buttonsubmit, button.btl-buttonsubmit ,.btl-content-block h3,
+.login_form .button, .login button ,.cat-children h3 ,.gkTabsWrap.vertical ol li,.searchintro ,dt.result-title
+,.componentheading, h1, h2, h3, h4, h5 ,.k2AccountPage th.k2ProfileHeading ,legend
+,.button, #btl-panel-login, #btl-panel-registration, #btl-panel-profile, .edit .formelm-buttons button ,#btl .btl-panel > span
+,.slide-desc-text .slide-title a , .slide-desc-text .slide-title ,div.ja-moduletable p, div.moduletable p ,.slide-desc-text .readmore ,div.tagItemHeader h2.tagItemTitle ,#ja-container ul.menu li li ,#ja-container ul.menu li{
+    font-family: 'pars-ff' !important;}
+#btl-content #btl-content-profile{  left: 0px !important;  right:  auto !important;}
+h1.logo a{	background: url(../images/rtl/rtl-logo.png) no-repeat right;    margin-right: 3px;    padding-left: 10px;}
+#ja-header .main { background-position: bottom left;   padding: 30px 0 6px;}
+#ja-lang ,#ja-search ,#ja-login{float: left}
+#ja-lang{ margin-right:  auto; margin-left: 15px;}
+#ja-search ,#ja-login{ margin-right:  auto; margin-left: 6px;}
+#ja-search form.search{ left: 0; right: auto;}
+#btl .btl-panel > span{ margin: 3px 0; height: 25px;}
+.breadcrumbs{background-position: right top !important;}
+#ja-lang{  width: 60px;  height: 27px;  overflow: hidden;}
+.gkTabsWrap.vertical ol li.active, .gkTabsWrap.horizontal ol li.active{   background: rgba(0, 0, 0, 0.2) !important;}
+.gkTabsWrap.vertical ol li, .gkTabsWrap.horizontal ol li{  float: right;}
+#ja-inset2 .badge, #ja-inset1 .badge {    left: 13px !important; right:auto !important; }
+.blog-featured .contentheading{ padding-right: 0px; padding-left: 55px;}
+#ja-bot-1 table.acymailing_form {float: right;}
+#ja-bot-1 ul.ja-social li a{ text-indent: 900px;}
+#ja-bot-1 div.ja-moduletable h3, #ja-bot-1 div.moduletable h3{text-align: right;}
+#ja-bot-1 .acysubbuttons .button{float: left; margin-left: 2px;   font-size: 13px; padding: 6px 9px;   color:#E5E3BA !important; }
+#ja-bot-1 .acymailing_form .inputbox{ padding: 9px 10px 9px 50px;}
+p.readmore a {background: url("../images/rtl/next-over.png") no-repeat scroll right top transparent;   float: right;  padding: 0 32px 1px 0 !important;}
+p.readmore a:hover {background: url("../images/rtl/next.png") no-repeat scroll right top transparent;  padding: 0 32px 1px 0 !important; }
+div.mod-languages ul.lang-block li {padding: 7px 0 1px;}
+div.itemListCategory img { float: right; margin: 0 0 0 8px;}
+div.catItemCommentsLink, div.userItemCommentsLink{background-position:right top ;margin: 0 0 0 8px; padding: 5px 33px 8px 0 !important;}
+div.catItemCommentsLink:hover, div.userItemCommentsLink:hover{background-position:right top ;}
+div.catItemReadMore, div.userItemReadMore {background: url("../images/rtl/next-over.png") no-repeat scroll right top transparent; padding: 6px 33px 9px 0 !important;}
+div.catItemReadMore:hover, div.userItemReadMore:hover {background: url("../images/rtl/next.png") no-repeat scroll right top transparent;}
+div.ja-moduletable h3, div.moduletable h3 { background-position:right top; padding-right: 30px; padding-left: 0px;}
+ja-moduletable_ico2 h3:hover, div.moduletable_ico2 h3:hover { background-position:right top !important; padding-right: 30px; padding-left: 0px;}
+.ja-box-right{ right: auto;}
+.contact-image {   margin-left: 15px;    margin-right: 0;}
+.contact_email_copy { float: right;}
+#ja-menu-button {    float: left;    margin-left: 22px;    margin-top: 15px;    margin-bottom:0px;}
+
+#ja-container ul.menu li li {    background: url("../images/right-li.png") repeat-x scroll left top  !important;}
+#ja-container ul.menu li a{    padding-right: 10px !important;    padding-left: 0 !important;    background-position:  right 56% !important;}
+.profile fieldset dt {    float: right;}
+.k2AccountPage th.k2ProfileHeading {    text-align: right;}
+.btl-label{ float: right !important ;}
+.btl-input ,#bt_ul{  float: left !important;}
+.btl-content-block ,#btl-content-login ul{  text-align: right;}
+#btl-content-login ul{ float: right !important ;}
+.btl-content-block h3{   padding: 3px 19px 0 0;}
+#simplemodal-container a.modalCloseImg ,#simplemodal-container a.modalCloseImg:hover{  left: 10px;  right: auto;}
+div.ja-moduletable_ico1 h3,  div.moduletable_ico1 h3{  background: url(../images/h3-icon.png) no-repeat top right;   padding-left: 0px !important;   padding-right: 30px;}
+div.itemComments{  width: 102% !important;}
+.k2Avatar img {  float:right;  margin:2px 0 4px 4px;}
+div.itemComments ul.itemCommentsList li img {  float:right;  margin:4px 0 4px 4px;}
+div.itemComments ul.itemCommentsList li p{  margin-left: 0px;  margin-right: 80px;}
+div.itemComments ul.itemCommentsList li span.commentLink {  float:left;}
+div.itemComments ul.itemCommentsList li span.commentDate {border-left:1px solid #AB4E39; border-right:none; }
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img{  margin: auto !important;}
+body .moduletable_blue h3 ,body .moduletable_blue-blank h3{ border-right: 3px solid #75D5DC;  border-left: none;}
+body .moduletable_green h3 ,body .moduletable_green-blank h3 { border-right: 3px solid #6BB49C;  border-left: none;}
+body .moduletable_brown h3 ,body .moduletable_brown-blank h3{ border-right: 3px solid #AE4F3A;  border-left: none;}
+body .moduletable_yellow-blank h3{ border-right: 3px solid #C49318;  border-left: none;}
+#ja-top{   left: 0;   right: auto;}
+#ja-mainnav{float:right; width: 520px;}
+.tpf {  float:left !important;  height:30px;  width:285px;}
+.slide-text p{ text-align: right;}
+div.ja-moduletable .custom, div.moduletable .custom{
+   background-position: left top;
+}
+/*responsive css */
+@media screen and (max-width:479px){}
+@media screen and (max-width:719px) {
+div.itemComments { width: 98% !important;  margin-right: -10px !important;  margin-left:  auto !important;}
+#ja-lang{width: 60px;}
+#ja-mainnav{float:left; height: 50px;}
+.rjd-active .ja-megamenu{    margin-top: 85px !important;}
+h1.logo a { background-image: url(../images/rtl/rtl-logo2.png);}
+}
+@media screen and (min-width:720px) and (max-width: 985px) {
+#ja-mainnav { float: left !important; }
+#ja-search {  left: 74px !important;right: auto !important;}
+#ja-lang { left:270px;  right: auto;  width: 66px;}
+#ja-login {  left: 114px;    right: auto;}
+div.mod-languages ul.lang-block li {  padding: 3px 0 0 !important;}
+.tpf {   float: none !important; }
+#ja-menu-button { margin-top: 11px;}
+h1.logo a {background-image: url(../images/rtl/rtl-logo2.png);}
+}
+@media screen and (min-width:986px) and (max-width: 1235px){
+#ja-mainnav{width: 560px;}
+.tpf {   width:250px;  background: none !important;}
+}
+@media screen and (min-width:1236px){
+  #ja-mainnav{width: 600px;}
+#ja-lang { width: 67px;}
+.tpf {  width:285px;}
+}

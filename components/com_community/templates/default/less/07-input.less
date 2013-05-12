@@ -1,0 +1,133 @@
+@input-border		: #ccc;
+@input-background	: #fff;
+@input-fontcolor	: #666;
+@input-fat			: 6px;
+
+
+/*----- STANDARDIZE INPUT USING ELEMENT -----*/
+
+label,
+input[type="text"], 
+input[type="password"],
+select,
+textarea,
+.button,
+.cButton,
+.uneditable-input
+{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: normal;
+	vertical-align: middle;
+}
+label,
+input[type="text"], 
+input[type="password"],
+.uneditable-input,
+select,
+textarea
+{
+	border:1px solid @input-border;
+	background: @input-background;
+	color: @input-fontcolor;
+	line-height: inherit !important;
+	padding: @input-fat;
+	vertical-align: middle;
+	.border-radius( 2px );
+	width: auto;
+}
+label
+{
+	border: 0;
+	background: none;
+	color: inherit;
+	padding: @input-fat 0;
+}
+input[type="text"], 
+input[type="password"],
+select
+{
+	height: auto !important;
+}
+
+select{
+	padding: @input-fat - 1;
+}
+textarea
+{
+	height: 60px;
+	width: 320px;
+	resize: vertical;
+
+	&.editable
+	{
+		border:1px dashed #ddd !important;
+		margin-top: @input-fat;
+
+		&:focus
+		{
+			border-style: solid !important;
+		}
+	}
+
+	&.readonly
+	{
+		padding: @input-fat 0 0;
+		border: 0;
+		height: auto;
+		width: 100%;
+		display: block;
+	}
+}
+.uneditable-input
+{
+	background: inherit;
+	border: 0;
+	color: inherit;
+	padding: @input-fat+1;
+	min-width: 200px;
+}
+.input-wrap
+{
+	display: block;
+	padding: 0 (@input-fat*2+2) 0 0;
+}
+
+
+
+
+/*----- STANDARDIZE CHECKBOX AND RADIO -----*/
+
+input[type="checkbox"],
+input[type="radio"]
+{
+	
+}
+.label-checkbox,
+.label-radio
+{
+	display: block;
+	padding: 0 0 0 25px;
+	line-height: inherit;
+	margin: @input-fat+1 0;
+
+	&.inline
+	{
+		display: inline-block;
+		vertical-align: middle;
+
+		+ .inline
+		{
+			margin-left: 10px;
+		}
+	}
+}
+.label-checkbox > input[type="checkbox"],
+.label-radio    > input[type="radio"]
+{
+	float: left;
+	margin: 1px 0 0 -25px;
+}

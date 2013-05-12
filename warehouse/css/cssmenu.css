@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.moduletable_menu {
+	z-index: 300;
+}
+
+ul.menu {	
+	margin: 0;
+	padding: 0;	
+	line-height: 100%;
+	
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	-pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ct_menu_horizontal ul.menu,
+#ct_headerMain_top ul.menu
+{
+	display: block;
+	width: 100%;
+}
+
+.ct_menu_vertical ul.menu {
+	display: block;
+}
+
+.ct_menu_vertical ul.menu
+#ct_headerMain_left ul.menu,
+#ct_headerMain_right ul.menu { 
+	width: 100%;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style: none;
+}
+
+.ct_menu_horizontal ul.menu li,
+#ct_headerMain_top ul.menu li
+{
+	float: left;
+}
+
+.ct_menu_horizontal ul.menu li ul li,
+#ct_headerMain_top ul.menu li ul li
+{
+	float: none;
+}
+
+/* main level link */
+ul.menu a, ul.menu .separator {
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	display: block;
+	padding: 14px 20px;
+}
+
+ul.menu .separator,
+.ct_menu_horizontal ul.menu a,
+#ct_headerMain_top ul.menu a
+{
+	margin: 0;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+ul.menu .separator,
+.ct_menu_vertical ul.menu a, 
+#ct_headerMain_left ul.menu a,
+#ct_headerMain_right ul.menu a
+ {
+	margin: 0;
+}
+
+
+
+/* Set border radius and border for the first menu item */
+ul.menu li:first-child a, 
+ul.menu li:first-child .separator 
+{
+	border-left: none;
+}
+
+.ct_menu_vertical ul.menu li:first-child a, 
+.ct_menu_vertical ul.menu li:first-child .separator,
+
+#ct_headerMain_left ul.menu li:first-child a, 
+#ct_headerMain_left ul.menu li:first-child .separator,
+#ct_headerMain_right ul.menu li:first-child a, 
+#ct_headerMain_right ul.menu li:first-child .separator
+{
+	border-top: none !important;
+}
+
+.ct_menu_vertical ul.menu li:first-child a, 
+.ct_menu_vertical ul.menu li:first-child .separator,
+
+#ct_headerMain_left ul.menu li:first-child a,
+#ct_headerMain_left ul.menu li:first-child .separator,
+#ct_headerMain_right ul.menu li:first-child a,
+#ct_headerMain_right ul.menu li:first-child .separator
+{
+	margin: 0;
+}
+
+/* Set border radius and border for the last menu item */
+ul.menu li:last-child a, 
+ul.menu  li:last-child .separator {
+	border-right: none;
+	margin: 0 !important;
+}
+
+/* main level link active & hover */
+
+ul.menu li.active a, 
+ul.menu li.active .separator,
+ul.menu li:hover a, 
+ul.menu li:hover .separator
+{
+	color: #fff !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* sub levels link hover reset*/
+
+ul.menu li:hover ul li a,
+ul.menu li:hover ul li .separator,
+ul.menu li.active ul li a,
+ul.menu li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li.active ul li a,
+ul.menu li:hover ul li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li:hover ul li.active ul li a,
+ul.menu li:hover ul li:hover ul li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li:hover ul li:hover ul li.active ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li.active ul li .separator
+{
+	background: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+
+
+ul.menu li:hover a,
+ul.menu li:hover .separator,
+ul.menu li.active a,
+ul.menu li.active .separator,
+
+ul.menu li:hover ul li:hover a,
+ul.menu li:hover ul li:hover .separator,
+ul.menu li:hover ul li.active a,
+ul.menu li:hover ul li.active .separator,
+
+ul.menu li:hover ul li:hover ul li:hover a,
+ul.menu li:hover ul li:hover ul li:hover .separator,
+ul.menu li:hover ul li:hover ul li.active a,
+ul.menu li:hover ul li:hover ul li.active .separator,
+
+ul.menu li:hover ul li:hover ul li:hover ul li:hover a,
+ul.menu li:hover ul li:hover ul li:hover ul li:hover .separator,
+ul.menu li:hover ul li:hover ul li:hover ul li.active a,
+ul.menu li:hover ul li:hover ul li:hover ul li.active .separator
+{
+	color: #fff !important;
+}
+
+
+.ct_menu_vertical ul.menu li a,
+.ct_menu_vertical ul.menu li .separator,
+
+.ct_menu_vertical ul.menu li:hover ul li a,
+.ct_menu_vertical ul.menu li:hover ul .separator,
+.ct_menu_vertical ul.menu li:hover ul a,
+.ct_menu_vertical ul.menu li:hover ul .separator,
+
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li a,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li .separator,
+.ct_menu_vertical ul.menu li:hover ul li.active ul li a,
+.ct_menu_vertical ul.menu li:hover ul li.active ul li .separator,
+
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li a,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li .separator,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li.active ul li a,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li.active ul li .separator,
+
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li a,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li .separator,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li.active ul li a,
+.ct_menu_vertical ul.menu li:hover ul li:hover ul li:hover ul li.active ul li .separator,
+
+ul.menu li:hover ul li a,
+ul.menu li:hover ul li .separator,
+ul.menu li.active ul li a,
+ul.menu li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li.active ul li a,
+ul.menu li:hover ul li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li:hover ul li.active ul li a,
+ul.menu li:hover ul li:hover ul li.active ul li .separator,
+
+ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li:hover ul li .separator,
+ul.menu li:hover ul li:hover ul li:hover ul li.active ul li a,
+ul.menu li:hover ul li:hover ul li:hover ul li.active ul li .separator
+{
+	
+	border-left: none;
+	border-right: none;
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+	border-bottom:1px solid rgba(0, 0, 0, 0.2);	
+}
+
+
+/* level 2 list */
+ul.menu ul {	
+	display: none;
+	
+	padding: 0;
+	width: auto;
+	white-space: nowrap;
+	position: absolute;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	
+	-pie-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ct_menu_horizontal ul.menu li ul li a, 
+.ct_menu_horizontal ul.menu li ul li .separator,
+.ct_menu_vertical ul.menu li ul li a, 
+.ct_menu_vertical ul.menu li ul li .separator,
+
+
+#ct_headerMain_top ul.menu li ul li a, 
+#ct_headerMain_top ul.menu li ul li .separator,
+#ct_headerMain_left ul.menu li ul li a, 
+#ct_headerMain_left ul.menu li ul li .separator,
+#ct_headerMain_right ul.menu li ul li a, 
+#ct_headerMain_right ul.menu li ul li .separator
+{
+	width: auto;
+	display: block;
+}
+
+.ct_menu_horizontal ul.menu li ul li a,
+.ct_menu_horizontal ul.menu li ul li .separator,
+.ct_menu_vertical ul.menu li ul li a,
+.ct_menu_vertical ul.menu li ul li .separator,
+
+#ct_headerMain_top ul.menu li ul li a,
+#ct_headerMain_top ul.menu li ul li .separator,
+#ct_headerMain_left ul.menu li ul li a,
+#ct_headerMain_left ul.menu li ul li .separator,
+#ct_headerMain_right ul.menu li ul li a,
+#ct_headerMain_right ul.menu li ul li .separator
+{
+	margin: 0;
+}
+
+.ct_menu_horizontal ul.menu li ul li:first-child a, 
+.ct_menu_horizontal ul.menu li ul li:first-child .separator,
+.ct_menu_vertical ul.menu li ul li:first-child a, 
+.ct_menu_vertical ul.menu li ul li:first-child .separator,
+
+#ct_headerMain_top ul.menu li ul li:first-child a, 
+#ct_headerMain_top ul.menu li ul li:first-child .separator,
+#ct_headerMain_left ul.menu li ul li:first-child a, 
+#ct_headerMain_left ul.menu li ul li:first-child .separator,
+#ct_headerMain_right ul.menu li ul li:first-child a, 
+#ct_headerMain_right ul.menu li ul li:first-child .separator
+{
+	border-top: none;
+	display: block;
+}
+
+.ct_menu_horizontal ul.menu li ul li:last-child a, 
+.ct_menu_horizontal ul.menu li ul li:last-child .separator,
+.ct_menu_vertical ul.menu li ul li:last-child a, 
+.ct_menu_vertical ul.menu li ul li:last-child .separator,
+
+#ct_headerMain_top ul.menu li ul li:last-child a, 
+#ct_headerMain_top ul.menu li ul li:last-child .separator,
+#ct_headerMain_left ul.menu li ul li:last-child a, 
+#ct_headerMain_left ul.menu li ul li:last-child .separator,
+#ct_headerMain_right ul.menu li ul li:last-child a, 
+#ct_headerMain_right ul.menu li ul li:last-child .separator
+{
+	border-bottom: none;
+}
+
+.ct_menu_horizontal ul.menu ul,
+#ct_headerMain_top ul.menu ul
+{
+	margin: 0;
+	top: 100%;
+	left: 0%;
+}
+
+.ct_menu_horizontal ul.menu ul li ul,
+#ct_headerMain_top ul.menu ul li ul
+{
+	margin: 0;
+	top: 0%;
+	left: 100%;
+}
+
+.ct_menu_vertical ul.menu ul,
+
+#ct_headerMain_left ul.menu ul,
+#ct_headerMain_right ul.menu ul 
+{
+	margin: 0 0 0 1px;
+	top: 0%;
+	left: 100%;
+}
+
+/* dropdown */
+.ct_menu_horizontal ul.menu li:hover > ul,
+#ct_headerMain_top ul.menu li:hover > ul
+{
+	display: block;
+}
+
+.ct_menu_vertical ul.menu li:hover > ul,
+
+#ct_headerMain_left ul.menu li:hover > ul,
+#ct_headerMain_right ul.menu li:hover > ul 
+{
+	display: inline-block;
+}
+
+ul.menu ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu ul a, ul.menu ul .separator {
+	font-size: 13px !important;
+	padding: 7px 20px;
+}
+/* level 3+ list */
+ul.menu ul ul {
+	left: 100%;
+	top: 0;
+}
+/* clearfix */
+ul.menu:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+* html ul.menu {
+	height: 1%;
+}

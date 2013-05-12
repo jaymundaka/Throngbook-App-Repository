@@ -1,0 +1,483 @@
+@stream-spacing			: 10px;
+@stream-margin			: 8px;
+@stream-border			: #e5e5e5;
+@stream-avatar			: 48px;
+@stream-video			: 112px;
+@stream-line			: 16px;
+@stream-avatar-s		: 32px;
+
+.cStreamTitle
+{
+	font-size: 125%;
+	border-bottom: 2px solid #e5e5e5;
+	padding: 0 0 10px;
+	margin: 10px 0 20px;
+}
+.cStreamList
+{
+	+ .cStreamTitle
+	{
+		margin-top: 35px;
+	}
+	&.pushedUp
+	{
+		margin-top: -(@stream-spacing);
+	}
+	> li
+	{
+		padding: (@stream-spacing+5) 0;
+		position: relative;
+		display: inline-block;
+		width: 100%;
+
+		+ li{ border-top: 1px solid @stream-border; }
+
+		&.feed-status
+		{
+			.stream-message
+			{
+				display: block;
+				margin: @stream-margin 0 0;
+			}
+		}
+	}
+
+	+ .cStreamList
+	{
+		margin-top: 40px;
+	}
+}
+
+.cStream-Avatar
+{
+	.cAvatar
+	{
+		.square( @stream-avatar );
+	}
+}
+
+.cStream-Content
+{
+	margin: 0 0 0 (@stream-avatar + @stream-spacing);
+
+	&.Compact
+	{
+		.cStream-Headline
+		{
+			min-height: 20px;
+			margin: 0 0 0 25px;
+
+			.cStream-Icon
+			{
+				margin: -2px 0 0 -25px;
+			}
+		}
+	}
+}
+.cStream-Author,
+.cStream-Heading,
+.cStream-Reference
+{
+	font-weight: bold;
+}
+.cProfileOther .cStream-Reference
+{
+	display: none
+}
+.cStream-Actions,
+.cStream-Attachment,
+// .cStream-Quote,
+.cStream-Status
+{
+	margin-top: @stream-margin;
+}
+.cStream-Quote
+{
+	padding: 0 0 0 10px;
+	border-left: 2px solid #ddd;
+}
+.cStream-Attachment
+{
+	display: inline-block;
+	width: 100%;
+}
+.cStream-Actions
+{
+	line-height: @stream-line;
+
+	> i,
+	> span
+	{
+		float: left;
+		display: inline-block;
+	}
+
+	span
+	{
+		line-height:  @stream-line;
+		height:  @stream-line;
+		min-height:  @stream-line;
+
+		+ span
+		{
+			background: url(../images/middot.png) 0 center no-repeat;
+			padding: 0 0 0 7px;
+			margin: 0 0 0 5px;
+		}
+	}
+}
+.cStream-Icon // set some spacing after stream icon
+{
+	margin:-( (20 - @stream-line) / 2 ) 5px 0 0;
+}
+.cStream-Control
+{
+	position: absolute;
+	top: @stream-spacing;
+	right: 0;
+}
+
+.cStream-Respond
+{
+	font-size: 90%;
+
+	> div
+	{
+		background: #f5f5f5;
+		border: 1px solid #eaeaea;
+		.border-radius( 2px );
+		margin: 7px 20px 0 0;
+		padding: 5px;
+
+		+ div
+		{
+			margin-top: 1px;
+		}
+	}
+	.cStream-Likes,
+	.cStream-More
+	{
+		line-height: 20px;
+	}
+}
+
+
+.cStream-Comment
+{
+	.cStream-Avatar
+	{
+		img
+		{ 
+			.square( 40px ); 
+		}
+	}
+	.cStream-Content
+	{
+		margin:0 0 0 50px;
+	}
+	.cStream-Meta
+	{
+		margin:3px 0 0;
+		color: #999; 
+
+		a[href="#removeComment"] {
+			display:none;
+		}
+	}
+}
+
+.cStream-Form
+{
+	display:none; /* start hidden */
+}
+.cStream-FormSubmit
+{
+	margin: 5px 0 0;
+	text-align: right
+}
+.cStream-FormText
+{
+	resize: none;
+}
+.cStream-FormCancel,
+.cStream-FormButton
+{
+	display:inline-block;
+	vertical-align: baseline;
+}
+.cStream-FormButton
+{
+	.border-radius( 2px );
+	.box( #ccc #ccc #aaa );
+	.gradient-vertical( #ffffff, #f0f0f0);
+
+	font-size: 11px;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 4px 6px;
+	color: #555;
+	cursor: pointer;
+	height: auto;
+}
+.wallnone {
+	display:none;
+}
+
+
+
+
+
+/**--- STREAM'S PHOTO ---**/
+
+.cStream-Photo
+{
+	.cPhoto-Thumb,
+	.cPhoto-Thumb img
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+}
+.cStream-PhotoRow > div
+{
+	max-width: 128px;
+}
+.cStream-Photo + .cStream-Quote,
+.cStream-PhotoRow + .cStream-PhotoRow
+{
+	margin: @stream-margin 0 0;
+}
+
+
+
+
+
+/**--- STREAM'S CUSTOM MESSAGE ---**/
+
+.cSnippets
+{
+	&.Inline
+	{
+		font-size: 0;
+		margin: -3px 0 0 -3px;
+
+		> b 
+		{
+			display: inline-block;
+			margin: 3px 0 0 3px;
+		}
+	}
+
+	&.Block 
+	{
+		> div + div
+		{
+			margin-top: 5px;
+		}
+	}
+}
+.cSnip-Avatar
+{
+	img{ .square( @stream-avatar ); }
+
+	&.Album 
+	{
+		background: #fff !important;
+		border: 1px solid #ccc;
+		margin: 4px 0 0 3px;
+
+		img 
+		{
+			background: #fff;
+			border: 1px solid #ccc;
+			display: inline-block;
+			float: left;
+			padding: 3px;
+			margin: -5px 2px 2px -5px;
+			.square( @stream-avatar+10 );
+		}
+
+		+ .cSnip-Detail
+		{
+			margin: 0 0 0 @stream-avatar+30;
+		}
+	}
+	&.Video
+	{
+		position: relative;
+
+		img{ .size( @stream-video, auto ); }
+		b
+		{
+			background: #111;
+			border-radius: 2px 2px 2px 2px;
+			bottom: 5px;
+			color: #fff;
+			font: 10px/1.2 Tahoma,Arial,sans-serif;
+			opacity: 0.8;
+			padding: 3px 5px;
+			position: absolute;
+			right: 5px; 
+		}
+	}
+}
+.cSnip-Detail
+{
+	margin: 0 0 0 @stream-avatar+10;
+
+	&.Video
+	{
+		margin: 0 0 0 @stream-video+10;
+	}
+}
+.cSnip-Title
+{
+	font-weight: bold;
+}
+.cSnip-Info
+{		
+	display: inline-block;
+	line-height: 16px;
+	margin-top: 5px;
+	width: 100%;
+
+	> span 
+	{ 
+		float: left;
+
+		+ span 
+		{
+			background: url(../images/middot.png) 0 center no-repeat;
+			padding: 0 0 0 7px;
+			margin: 0 0 0 5px;
+		}
+	}
+}
+.cSnip-Photo
+{
+	display: inline-block;
+	position: relative;
+
+	img
+	{
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	span
+	{
+		background: #333;
+		background: rgba( 0,0,0,0.5 );
+		border: 1px solid #ddd;
+		display: none;
+		position: absolute;
+		left: -1px;
+		top: -1px;
+		width: 100%;
+		height: 100%;
+
+		i
+		{
+			color: #fff;
+			display: block;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+			padding: 10px;
+		}
+	}
+
+	&:hover span
+	{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cUpdatesHelper
+{
+	border-top: 1px dotted #ddd;
+	padding-top: 15px;
+	margin-top: 15px;
+
+	.updates-options
+	{
+		a + a
+		{
+			border-left: 1px solid #ddd;
+			display: inline-block;
+			padding: 0 0 0 5px;
+			margin: 0 0 0 5px;
+		}
+	}
+}
+
+
+.cActivity-Button
+{
+	.box( #ccc #ccc #bbb );
+	.border-radius( 3px );
+	.gradient-vertical( #ffffff, #f0f0f0 );
+
+	> a 
+	{
+		background: none !important;
+		color: #555 !important;
+		text-align: center;
+		text-decoration: none !important;
+		font-weight: bold;
+	}
+
+	> a,
+	> div
+	{
+		border: 0;
+		display: block;
+		height: 24px;
+		line-height: 24px;
+		margin: 0;
+		padding: 5px 0;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.cActivity-LoadLatest
+{
+	display: none;
+	margin-bottom: 5px;
+}
+
+.cActivity-LoadMore
+{
+	margin-top: 5px;
+
+	.loading
+	{
+		background-position: center !important;
+		background-repeat: no-repeat;
+		display: none;
+	}
+}

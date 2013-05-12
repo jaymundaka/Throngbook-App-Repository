@@ -1,0 +1,193 @@
+/**- APP WITH CUSTOM OPTIONS -**/
+
+.app-item,
+.app-add
+{
+	border: solid 1px #ccc;
+	.border-radius( 3px );
+	color: #555;
+	position: relative;
+	margin: 0 0 7px;
+	padding: 10px;
+	overflow: hidden;
+	cursor: move;
+}
+.app-item
+{
+	&.app-core
+	{
+		background: #eee;
+		cursor: default;
+	}
+}
+.app-add
+{
+	border: 1px dashed #ddd;
+
+	a 
+	{
+		text-decoration: none;
+
+		&:hover,
+		&:hover {
+			background: none;
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}
+
+
+/**- APP WITH CUSTOM OPTIONS -**/
+
+.app-item-edit
+{
+	.app-title {
+		display: block;
+		line-height: 20px;
+		height: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		margin: 0 0 0 30px;
+	}
+	.app-actions {
+		border-top: 1px solid #eee;
+		margin-top: 10px;
+		padding-top: 10px;
+		text-align: right;
+		height: 20px;
+	}
+	.app-actions a {
+		background: none !important;
+		display: inline-block;
+		vertical-align: top;
+
+		+ a {
+			margin: 0 0 0 5px;
+		}
+	}
+	.app-favicon {
+		margin: 2px;
+	}
+
+	.app-favicon,
+	.app-action-remove
+	{
+		position: absolute;
+		left: 10px;
+		top: 10px;
+	}
+
+	.app-action-remove {
+		display: none;
+
+		&:hover
+		{
+			background:none;
+		}
+	}
+	&:hover
+	{
+		.app-action-remove {
+			display: block;
+		}
+		.app-favicon
+		{
+			display: none;
+		}
+	}
+}
+
+
+
+/**- APP BOX INSIDE MAIN CONTENT -**/
+
+.app-box-main
+{
+	margin-top: 30px;
+
+	.app-widget-header
+	{
+		background: #D1D1B0;
+		.border-radius( 3px );
+		border: 1px solid #afaf90;
+		border-bottom-color: #959577;
+		.box-shadow( 0 1px 0 rgba( 255,255,255,0.25 ) inset );
+		padding: 7px 10px;
+		margin: 0 0 15px;
+		position: relative;
+
+		.app-box-title
+		{
+			color: #4E6221;
+			font-size: 100%;
+			height: 20px;
+			line-height: 20px;
+		}
+	}
+
+	.app-box-menus
+	{
+		height: 20px;
+		position: absolute;
+		right: 7px;
+		top: 7px;
+
+		* { font-size: 0; display: inline-block; vertical-align: top; }
+		a { background: none !important; }
+	}
+}
+
+
+
+
+
+
+
+
+
+/**
+* COMMUNITY :APPS DRAG & DROP
+* Affected files:- applications.edit.php (Application/My Application)
+* this class is reusable across the JomSocial application
+*/
+
+#apps-mine .app-item.dragHandle {
+	cursor: move
+}
+.app-item.dragHandle .app-item-description {
+	margin: 0 20px 15px 100px
+}
+.app-item.dragHandle .app-item-details,
+.app-item.dragHandle h3 {
+	margin: 0 20px 0 100px
+}
+.app-item.onDrag a {
+	color: #8e58b7
+}
+.app-position.onDrag,
+.app-position.onSave {
+	background: #ffd;
+	.border-radius( 3px );
+	border: 1px solid #ccc;
+	padding: 5px 5px 3px;
+}
+.app-placeholder {
+	margin-bottom: 5px;
+	border: 1px dashed #aaa;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+.app-item.onDrag {
+	width: 200px;
+    .opacity( 50 )
+}
+.app-item.onSave {
+	background-image: url(../images/wait.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 1px dashed #aaa;
+	.opacity( 50 )
+}

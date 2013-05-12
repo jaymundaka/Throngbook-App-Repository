@@ -1,0 +1,108 @@
+
+/* ADD NEW FRIEND WINDOW STYLE */
+
+
+/** Ajax **/
+body #community-wrap div.ajax-wait {
+	background-image: url(../images/wait.gif);
+	width: 16px;
+	height: 16px;
+}
+
+/** drag **/
+body #community-wrap td.dragHandle {
+	cursor: move;
+}
+body #community-wrap .showDragHandle {
+	background-image: url(../images/drag.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+
+
+
+/**
+* new online icon
+*/
+#community-wrap .icon-online-overlay,
+#community-wrap .icon-offline-overlay {
+	height: 16px;
+	line-height: 16px;
+	padding: 0 5px 0 10px;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background: transparent url(../images/online.png) no-repeat 0 0;
+}
+#community-wrap .icon-offline-overlay {
+	background: transparent url(../images/offline.png) no-repeat 0 0;
+}
+
+
+
+
+/*
+* GLOBAL :FRIEND SUGGESTION
+* ::new styling add as friend link on friend suggestion module
+*/
+/*body #community-wrap span.btn-add-friend a {
+	background: url("../images/toolbar/profile-toolbar-icons.gif") no-repeat scroll 0 0 transparent;
+	padding: 0 0 0 20px;
+	margin: 0 15px 0 0;
+}*/
+
+
+/* Register view */
+#community-wrap .jsPasswordStrength {
+	margin-left: 10px;
+	padding: 2px 5px;
+	display: inline-block;
+	color: #000;
+}
+#community-wrap .jsPasswordStrength_1 {
+	background-color: #FCB6B1;
+}
+#community-wrap .jsPasswordStrength_2 {
+	background-color: #FCCAB1;
+}
+#community-wrap .jsPasswordStrength_3 {
+	background-color: #FCFBB1;
+}
+#community-wrap .jsPasswordStrength_4 {
+	background-color: #DAFCB1;
+}
+#community-wrap .jsPasswordStrength_5 {
+	background-color: #BCFCB1;
+}
+
+body .qtip small {
+	font-size: 11px !important;
+}
+body .qtip hr {
+	height: 1px
+}
+
+
+
+
+/* prevents FB button from missing on hover */
+body #community-wrap a.fb_button_medium:hover {
+	background: url("http://static.ak.fbcdn.net/rsrc.php/v1/zL/r/FGFbc80dUKj.png") no-repeat scroll 0 -188px #29447E !important;
+}
+
+
+
+/* Tipsy library */
+.tipsy{padding:5px; font-size:10px; opacity:0.8; filter:alpha(opacity=80); background-repeat:no-repeat; background-image:url(../images/tipsy.gif);}
+.tipsy-inner{padding:5px 8px 4px 8px; background-color:black; color:white; max-width:200px; text-align:center}
+.tipsy-inner{-moz-border-radius:3px; -webkit-border-radius:3px}
+.tipsy-north{background-position:top center}
+.tipsy-south{background-position:bottom center}
+.tipsy-east{background-position:right center}
+.tipsy-west{background-position:left center}

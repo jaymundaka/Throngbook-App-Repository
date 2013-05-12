@@ -1,0 +1,88 @@
+.com-icon-thumbup()
+{
+  background-position: 0 -580px; 
+}
+.com-icon-thumbdown()
+{
+  background-position: 0 -600px; 
+}
+
+
+.cLike
+{
+	.box( #ccc #ccc #bbb );
+	.border-radius( 3px );
+	display: inline-block;
+	.gradient-vertical( #ffffff, #f0f0f0);
+	overflow: hidden;
+
+	a,
+	b,
+	i
+	{
+		color: #555 !important;
+		display: block;
+		font-weight: bold;
+		font-size: 11px;
+		float: left;
+		line-height: 20px;
+		height: 20px;
+		text-decoration: none !important;
+		text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+	}
+	b 
+	{
+		margin: 0 3px;
+		color: inherit; 
+	}
+	a
+	{
+		background: transparent;
+		padding: 4px 6px;
+
+		+ a 
+		{
+			border-left: 1px solid #ccc;
+		}
+
+		&:hover,
+		&:focus
+		{
+			background: transparent;
+		}
+	}
+	.like-button:hover > i 
+	{
+		.com-icon-thumbup();
+	}
+	.dislike-button:hover > i 
+	{
+		.com-icon-thumbdown();
+	}
+	.meLike,
+	.meLike:hover,
+	.meLike:focus 
+	{
+		.gradient-vertical( #94c753, #c4df91);
+	}
+	.meDislike,
+	.meDislike:hover,
+	.meDislike:focus 
+	{
+		.gradient-vertical( #ee4d38, #f78a65);
+	}
+	.meLike,
+	.meDislike 
+	{
+		> b
+		{
+			color: #fff !important;
+			text-shadow: -1px -1px 0 rgba(0,0,0,0.2)
+		}
+	}
+
+	&.forPublic
+	{
+		> a { cursor: default; }
+	}
+}

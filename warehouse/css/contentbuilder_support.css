@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* CONTENTBUILDER VOTING ---------------------------------------------------------------------------*/
+
+.ct_votingWrapper {
+	display: block;
+	height: 31px;
+	width: auto;
+}
+
+.ct_ratingContent, .ct_ratingTextWrapper, .ct_votingTextWrapper, .ct_votingStarsWrapper, .ct_votingStarOn, .ct_votingStarOff, .ct_ratingCountWrapper, .ct_voteContent, .ct_votingRadiosWrapper {
+	display: inline;
+	float: left;
+	height: 21px;
+	white-space: nowrap;
+	width: auto;
+}
+
+.ct_ratingContent, .ct_votingTextWrapper, .ct_votingRadiosWrapper {
+	margin-top: 3px;
+}
+
+.ct_ratingContent {
+	margin-right: 20px;
+}
+
+.ct_ratingTextWrapper, .ct_votingTextWrapper, .ct_ratingCountWrapper, .ct_vote_content {
+	font-family: "MavenProRegular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: #999;
+	line-height: 16px;
+}
+
+.ct_votingStarsWrapper {
+	padding: 0 5px 0 5px;
+}
+
+.ct_votingStarOn, .ct_votingStarOff {
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+/*
+.ct_votingStarOn {
+	background-image: url(../images/bg_votingStarOn.png);
+}
+
+.ct_votingStarOff {
+	background-image: url(../images/bg_votingStarOff.png);
+}
+*/
+
+.ct_votingDisplay {
+	background-image: url(../images/bg_votingStarOff.png);
+}
+
+.ct_votingStars {
+	background-image: url(../images/bg_votingStarOn.png);
+}
+
+.ct_voteContent .button {
+	margin: 0 0 0 20px;
+	float: left;
+	display: inline;
+	clear: right;
+}
+
+/* CONTENTBUILDER LIST VIEW ------------------------------------------------------------------------*/
+
+.sectiontableheader, .sectiontableheader a {
+	font-family: "MavenProRegular", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	font-weight: normal;
+	font-size: 14px !important;
+	color: #ccc !important;
+	line-height: 16px !important;
+	text-align: left;
+}
+
+.sectiontableheader {
+	background-image: url(../images/bg_box_light_13.png);
+	padding: 8px 5px 8px 5px;
+	border-bottom: 1px solid #999;
+}
+
+table.adminlist, table.adminlist tbody tr, table.adminlist tbody tr td, table.adminlist tbody tr.row0:hover td, table.adminlist tbody tr.row1:hover td {
+	background: none;
+	background-color: none;
+	border: none;
+}
+
+
+/* CONTENTBUILDER PAGINATION ------------------------------------------------------------------------*/
+
+.ct_pagination {
+	width: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.ct_pagination div, .ct_pagination div span, .ct_pagination div a {
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+}
+
+.ct_pagination div {
+	float: left;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	overflow: visible;   
+}
+
+.ct_PaginationStart,
+.ct_PaginationPrevious,
+.ct_PaginationNext,
+.ct_PaginationEnd,
+ct_PaginationPage,
+.ct_PaginationPageActive a,
+.ct_PaginationPageActive span {
+	display: block;
+    padding: 2px;	
+	margin-right: 7px;
+	
+    border:medium none;
+    border-radius:3px 3px 3px 3px;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.3);
+ 
+    cursor:pointer;
+	
+    font-family:"MavenProRegular","Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+	color:#FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.ct_PaginationStart span, .ct_PaginationPrevious span, .ct_PaginationNext span, .ct_PaginationEnd span,
+.ct_PaginationStart a, .ct_PaginationPrevious a, .ct_PaginationNext a, .ct_PaginationEnd a {
+	display: block;
+	text-indent: -9999px;
+}
+
+.ct_PaginationStart span, .ct_PaginationStart a {
+	background-image: url(../images/btn_pagination_start.png);
+}
+.ct_PaginationPrevious span, .ct_PaginationPrevious a {
+	background-image: url(../images/btn_pagination_previous.png);
+}
+.ct_PaginationPage {
+	width: auto !important;
+}
+
+.ct_PaginationPage a, .ct_PaginationPage span {
+	font-family: "MavenProRegular", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.ct_PaginationPageActive a {
+	color: #fff;
+	text-shadow: 0px 0px 5px #fff;
+}
+.ct_PaginationNext span, .ct_PaginationNext a {
+	background-image: url(../images/btn_pagination_next.png);
+}
+.ct_PaginationEnd span, .ct_PaginationEnd a {
+	background-image: url(../images/btn_pagination_end.png);
+}
+
+.ct_PaginationStart span, .ct_PaginationPrevious span, .ct_PaginationNext span, .ct_PaginationEnd span {
+	background-position: 0 0;
+}
+
+.ct_PaginationStart a:hover, .ct_PaginationPrevious a:hover, .ct_PaginationNext a:hover, .ct_PaginationEnd a:hover {
+	background-position: 0 -20px;
+}
+
+.ct_PaginationStart span, .ct_PaginationPrevious span, .ct_PaginationNext span, .ct_PaginationEnd span {
+	background-position: 0 -40px;
+}
+
+
+/* CONTENTBUILDER LIST ------------------------------------------------------------------------*/
+
+.cbFilterTable tr.alt td  {
+	background-image: none !important;
+}
+
+.cbFilterTable tr.over, .cbFilterTable tr.over td  {
+	background-image: none !important;
+	color: #ccc !important;
+}
+
+
+/* CONTENTBUILDER VOTING ------------------------------------------------------------------------*/
+
+.cbVotingStars {
+    background-image:url(../images/bg_votingStarOn.png) !important;
+}
+
+.cbVotingDisplay {
+    background-image:url(../images/bg_votingStarOff.png) !important;
+}
+
+
+/* CONTENTBUILDER PRINT BUTTON ------------------------------------------------------------------------*/
+
+.contentheading {
+	display: block;
+}
+
+.cbPrintBar {
+	position: relative;
+	float: right;
+	margin-left: 25px;
+}
+.cbPrintButton {
+	margin-right: 10px !important;
+	background-image: url(../images/bg_icon_print.png) !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+/* CONTENTBUILDER BACK BUTTON ------------------------------------------------------------------------*/
+
+.cbBackButton {
+	position: relative;
+	height: 26px;
+	border: none;
+	border-left: 1px solid #383838;
+	border-top: 1px solid #383838;
+	padding: 0px 12px 4px 25px;
+	margin: 10px 0 10px 15px;
+	font-family: "MavenProRegular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #ccc;
+	font-size: 14px;
+	text-shadow: -1px -1px 1px #000;
+	background-image: url(../images/bg_btn_back.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	float: right;
+	/*clear: both;*/
+	cursor: pointer;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cbBackButton:hover {
+	color: #fff;
+	border-color: #4f4f4f;
+}
+
+
+/* CONTENTBUILDER FILTER TABLE  ------------------------------------------------------------------------*/
+
+.cbFilterTable select {
+	-moz-box-sizing: border-box;  
+	-webkit-box-sizing: border-box;  
+ 	box-sizing: border-box; 
+	height: 22px;
+    border:1px solid #666;
+	background-color: transparent;
+	padding: 0 0 0 4px;
+	margin: 0 5px 0 5px;
+	font-size: 12px;
+	color: #ffffff;	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-image: url(../images/bg_inputfield.png);
+	behavior: url(templates/crosstec/PIE/PIE.htc);
+}
+
+.cbFilterTable select option {
+	background-color: #323232;
+}

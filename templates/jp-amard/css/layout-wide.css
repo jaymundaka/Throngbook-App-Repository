@@ -1,0 +1,39 @@
+body.fs1 #ja-wrapper {  font-size: 1.1em !important;}
+body.fs2 #ja-wrapper {  font-size: 1.2em !important;}
+body.fs3 #ja-wrapper {  font-size: 1.3em !important;}
+body.fs4 #ja-wrapper {  font-size: 1.4em !important;}
+body.fs5 #ja-wrapper {  font-size: 1.5em !important;}
+body.fs6 #ja-wrapper {  font-size: 1.6em !important;}
+.navigation-container-custom{  right: 40% !important;}
+.prev-button {    right: 209px !important;}
+.next-button {     right: 7px !important;}
+
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+.main {  width: 1200px;}
+/* MASONRY PRESETS (240px*5 Grids)
+-------------------------------------------------------- */
+/* CONTENT'S GRIDS
+--------------------------------------------------------- */
+.item {}
+.cols-1 .item,
+.cols-2 .item,
+.cols-3 .item,
+.cols-4 .item,
+.cols-5 .item {
+  width:100% !important;}
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {}
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {}
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+/* Main Nav ---*/
+/* hide menu button in wide screen */
+#ja-menu-button {  display: none;}
+#ja-lang{  width: 64px;}
+.fixed {    width: 64% !important;}
+div.mod-languages ul.lang-block li {    display: inline-block;      padding: 2px 0;}
+body#bd { background: url(../images/bckg.jpg) no-repeat top center #222 ; background-size: 100%; }   

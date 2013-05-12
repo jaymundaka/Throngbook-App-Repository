@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" type="plugin" group="community" method="upgrade">
+	<name>Geommunity Map Locator Profile application</name>
+	<author>Nordmograph</author>
+	<creationDate>10 February 2010</creationDate>
+	<copyright>Copyright 2007 - 2011 Nordmograph</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>http://www.nordmograph.com</authorUrl>
+	<version>2.3.3</version>
+	<isapplication>true</isapplication>
+	<description>
+		Add your location to your profile and your nanoprofile to the site Geommunity map!... in 1 click!
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_geommunitylocator.ini</language>
+		<language tag="fr-FR">fr-FR.plg_geommunitylocator.ini</language>
+	</languages>
+	<files>
+		<file plugin="geommunitylocator">geommunitylocator.php</file>
+		<folder>geommunitylocator</folder>
+	</files>
+	
+	<menuitem>
+		<menu label="geommunitylocator" position="toolbar">
+			<link label="geommunitylocator">task=geommunitylocator</link>
+		</menu>
+	</menuitem>
+
+	<params>
+		<param name="cache" type="list" default="0" label="Enable caching" description="Cache data">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="coreapp" type="list" default="1" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="position" type="list" default="content" label="Position" description="Default position if you select this as core apps">
+			<option value="content">Main  content</option>
+			<option value="sidebar-top">Sidebar top</option>
+			<option value="sidebar-bottom">Sidebar bottom</option>
+		</param>
+		<param name="readonly" type="list" default="0" label="Readonly Mode" description="Enable this to force users to be geocoded from their Jomsocial address fields and to prevent them from manually pointing their position on the map">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+	<param name="type" type="list" default="ROADMAP" label="Default map type" description="" >
+				<option value="ROADMAP">Normal Map</option>
+				<option value="SATELLITE">Satellite Map</option>
+				<option value="HYBRID">Hybrid Map</option>
+				<option value="TERRAIN">Physical Map</option>
+		</param>
+	<param name="width" type="text" default="100%" size="20" label="Map width" description="Supports both % and px units" />
+	<param name="height" type="text" default="400px" size="20" label="Map height" description="Supports both % and px units" />
+	
+	<param name="zoom" type="list" default="5" label="Zoom" description="1 is far, 20 is near. Do not use to high value as some vues might not be available">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+		</param>
+		<param name="stylez" type="textarea" filter="raw" default="" label="NEW: Map Custom styling" description="You can customize the map layout colors. Basicaly you need to paste in this field the JSON code you get on http://tinyurl.com/map-styler" />
+		<param name="scrollwheel" type="radio" default="1" label="Scroll wheel zoom" description="Enable mouse scroll wheel zooming">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</param>
+		<param name="geodesic" type="radio" default="0" label="Geodesy" description="This applies to polylines. If set to yes, polylines length will consider the planet shape.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+		<param name="showstreetview" type="list" default='1' label="Show StreetView" description="Select YES to show the StreetView table if data is available.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+<param name="showqrcode" type="list" default='1' label="Show QRCode" description="Select YES to show the QRCode.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+	<param name="modulelink" type="text" default="index.php" size="20" label="Geommunity module page" description="Set the url to the geommunity module. Do not leave only index.php, it must link to the module page! or leave empty and it will not show..." />
+	<param name="shoutbox" type="radio" default="0" label="Shoutbox integration" description="If set, users will have the opportunity to have their new location announced in the RISP or SMO Ajax shoutbox module when location is updated (and showing also in the Jomsocial activity feed). It requires the Ajax Shoutbox from Risp or SMO to be installed!">
+				<option value="0">NO</option>
+				<option value="1">Risp</option>
+				<option value="2">SMO</option>
+		</param>
+		<param name="userpoints" type="radio" default="0" label="Userpoints" description="Attribute points to located users once. It only pays points once per userid and requires you install the provided xml rule. Jomsocial rule is not recommended as it can not be limited to once because of the Jomsocial userpoints API">
+				<option value="0">NO</option>
+				<option value="1">Jomsocial userpoints</option>
+				<option value="2">AlphaUserPoints</option>
+		</param>
+		<param name="showfriends" type="radio" default="1" label="Show friends" description="Show friends location on map">
+			<option value="0">Disabled</option>
+			<option value="1">Enabled</option>
+		</param>
+		<param name="friendslimit" type="text" default="100" size="10" label="Friends limit" description="Maximum amount of friends to show" />
+		<param name="fnaming" type="radio" default="username" label="Friends Naming" description="Show friends real name or username">
+			<option value="username">Username</option>
+			<option value="name">Name</option>
+		</param>
+		<param name="linecolor" type="text" label="Connection lines color" default="#333333" description="333333 with #..." />
+		<param name="privacyaware" type="radio" default="0" label="Privacy Aware" description="This parameter checks user's friends privacy settings for their Geommunity Locator profile application, before diplaying the friend marker on user's profile map.">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		
+		<param name="showevents" type="list" default="1" label="Show Events" description="Show user related events location on map">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+		</param>
+		<param name="eventslimit" type="text" default="10" label="Events Limit" description="Maximum amount of events to show" />
+				
+				
+				
+		<param name="activitymap" type="radio" default="1" label="Activity stream map" description="Enable static map activity stream on location update announcements">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="activitymap_width" type="text" default="390" label="Activity stream Map width" description="default 390" />
+		<param name="activitymap_height" type="text" default="100" label="Activity stream Map height" description="default 100" />
+		<param name="activitymarker_color" type="list" default="blue" label="Activity map marker color" description="">
+					<option value="red">red</option>
+					<option value="blue">blue</option>
+					<option value="white">white</option>
+					<option value="black">black</option>
+					<option value="green">green</option>
+					<option value="pink">pink</option>
+					<option value="yellow">yellow</option>
+		</param>
+		
+		<param name="showroute" type="radio" default="1" label="Enable route" description="Enable route and itinaries to profileowner location">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</param>
+				<param name="default_modeoftravel" type="radio" default="DRIVING" label="Default Mode of travel" description="">
+					<option value="DRIVING">DRIVING</option>
+					<option value="WALKING">WALKING</option>
+					<option value="BICYCLING">BICYCLING</option>
+				</param>
+				<param name="enable_modeoftravel" type="radio" default="1" label="Enable Mode of travel selection" description="">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</param>
+				<param name="unitsystem" type="radio" default="METRIC" label="Unit System" description="">
+					<option value="METRIC">METRIC</option>
+					<option value="IMPERIAL">IMPERIAL</option>
+				</param>
+		
+		
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+					<option value="1">Use Global</option>
+					<option value="0">No</option>
+				</field>
+				<field name="position" type="list" default="content" label="Position" description="Default position if you select this as core apps">
+					<option value="content">Main  content</option>
+					<option value="sidebar-top">Sidebar top</option>
+					<option value="sidebar-bottom">Sidebar bottom</option>
+				</field>
+				<field name="readonly" type="list" default="0" label="Readonly Mode" description="Enable this to force users to be geocoded from their Jomsocial address fields and to prevent them from manually pointing their position on the map">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+				</field>
+
+				<field name="type" type="list" default="ROADMAP" label="Default map type" description="" >
+						<option value="ROADMAP">Normal Map</option>
+						<option value="SATELLITE">Satellite Map</option>
+						<option value="HYBRID">Hybrid Map</option>
+						<option value="TERRAIN">Physical Map</option>
+				</field>
+				<field name="width" type="text" default="100%" label="Map Width" description="Supports both % and px units" />
+				<field name="height" type="text" default="400px" label="Map Height" description="Supports both % and px units" />
+				<field name="zoom" type="list" default="5" label="Zoom" description="1 is far, 20 is near. Do not use to high value as some vues might not be available">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+				<field name="stylez" type="textarea" filter="raw" default="" label="NEW: Map Custom styling" description="You can customize the map layout colors. Basicaly you need to paste in this field the JSON code you get on http://tinyurl.com/map-styler" />
+				<field name="geodesic" type="radio" default="0" label="Geodesy" description="This applies to polylines. If set to yes, polylines length will consider the planet shape.">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="scrollwheel" type="list" default="1" label="Scroll Wheel Zoom" description="Enable mouse scroll wheel zooming">
+					<option value="1">Jyes</option>
+					<option value="0">JNo</option>
+				</field>
+				<field name="showstreetview" type="list" default='1' label="Show StreetView" description="Select YES to show the StreetView table if data is available.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</field>
+<field name="showqrcode" type="list" default='1' label="Show QRCode" description="Select YES to show the QRCode.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</field>
+				<field name="modulelink" type="text" default="index.php" label="Geommunity module page" description="Set the url to the geommunity module. Do not leave only index.php, it must link to the module page! or leave empty and it will not show..." />
+				<field name="shoutbox" type="list" default="0" label="Shoutbox integration" description="If set, users will have the opportunity to have their new location announced in the RISP or SMO Ajax shoutbox module when location is updated (and showing also in the Jomsocial activity feed). It requires the Ajax Shoutbox from Risp or SMO to be installed!">
+					<option value="0">No</option>
+					<option value="1">Risp</option>
+					<option value="2">SMO</option>
+				</field>
+				<field name="userpoints" type="list" default="0" label="Userpoints" description="Attribute points to located users once. It only pays points once per userid and requires you install the provided xml rule. Jomsocial rule is not recommended as it can not be limited to once because of the Jomsocial userpoints API">
+					<option value="0">No</option>
+					<option value="1">Jomsocial userpoints</option>
+					<option value="2">AlphaUserPoints</option>
+				</field>
+				<field name="showfriends" type="list" default="1" label="Show Friends" description="Show friends location on map">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="friendslimit" type="text" default="100" label="Friends Limit" description="Maximum amount of friends to show" />
+				<field name="fnaming" type="list" default="username" label="Friends Naming" description="Show friends real name or username">
+					<option value="username">Username</option>
+					<option value="name">Name</option>
+				</field>
+				<field name="linecolor" type="text" default="#333333" label="Connection lines color" description="#333333 with #..." />
+				<field name="privacyaware" type="list" default="0" label="Privacy Aware" description="This parameter checks user's friends privacy settings for their Geommunity Locator profile application, before diplaying the friend marker on user's profile map.">	
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="showevents" type="list" default="1" label="Show Events" description="Show user related events location on map">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="eventslimit" type="text" default="10" label="Events Limit" description="Maximum amount of events to show" />
+				<field name="activitymap" type="list" default="1" label="Activity stream map" description="Enable static map activity stream on location update announcements">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="activitymap_width" type="text" default="390" label="Activity stream Map width" description="default 390" />
+				<field name="activitymap_height" type="text" default="100" label="Activity stream Map height" description="default 100" />
+				<field name="activitymarker_color" type="list" default="blue" label="Activity map marker color" description="">
+					<option value="red">red</option>
+					<option value="blue">blue</option>
+					<option value="white">white</option>
+					<option value="black">black</option>
+					<option value="green">green</option>
+					<option value="pink">pink</option>
+					<option value="yellow">yellow</option>
+				</field>
+				
+				
+				<field name="showroute" type="radio" default="1" label="Enable route" description="Enable route and itinaries to profileowner location">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="default_modeoftravel" type="radio" default="DRIVING" label="Default Mode of travel" description="">
+					<option value="DRIVING">DRIVING</option>
+					<option value="WALKING">WALKING</option>
+					<option value="BICYCLING">BICYCLING</option>
+				</field>
+				<field name="enable_modeoftravel" type="radio" default="1" label="Enable Mode of travel selection" description="">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="unitsystem" type="radio" default="METRIC" label="Unit System" description="">
+					<option value="METRIC">METRIC</option>
+					<option value="IMPERIAL">IMPERIAL</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</install>

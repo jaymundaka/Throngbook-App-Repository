@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'pars-ff';
+    src: url('../font/fa/BYekan.eot');
+    src: url('../font/fa/BYekan.eot?#iefix') format('embedded-opentype'),
+         url('../font/fa/BYekan.woff') format('woff'),
+         url('../font/fa/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#frame #form-login label ,#frame p.offline-message ,#frame #form-login .button ,#frame p.offline-message{
+  font-family: 'pars-ff' ;
+}
+#frame #form-login label ,#frame #form-login #remember{
+   float: right !important;
+}

@@ -1,0 +1,19 @@
+@mce-border-color		: #ccc;
+
+.mceEditor
+{
+	display: block;
+
+	.mceLayout
+	{
+		border: 1px solid @mce-border-color;
+	}
+	.mceFirst > .mceToolbar
+	{
+		border-bottom: 1px solid @mce-border-color;
+	}
+	.mceLast > .mceStatusbar
+	{
+		border-top: 1px solid @mce-border-color;
+	}
+}

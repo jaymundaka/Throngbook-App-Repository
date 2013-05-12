@@ -1,0 +1,35 @@
+@videoThumbWidth		: 112px;
+@videoContentSpace		: @videoThumbWidth + 10px;
+
+.cVideo-Thumb
+{
+	display: inline-block;
+	position: relative;
+
+	img
+	{
+		width: @videoThumbWidth;
+		height: auto;
+	}
+
+	b
+	{
+		.border-radius( 2px );
+		color: #fff !important;
+		font: 10px/1.2 Tahoma,Arial,sans-serif;
+		padding: 3px 5px;
+		background: #111;
+		opacity: 0.8;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+}
+.cVideo-Content
+{
+	margin: 0 0 0 @videoContentSpace;
+}
+.cVideo-Desc
+{
+	margin: 5px 0 0;
+}

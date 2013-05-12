@@ -1,0 +1,13 @@
+.ja-inset2 div.ja-moduletable, .ja-inset2 .div.moduletable, .ja-inset2 div.ja-module, .ja-inset2 div.module
+,.ja-inset1 div.ja-moduletable, .ja-inset1 .div.moduletable, .ja-inset1 div.ja-module, .ja-inset1 div.module {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.item .contentpaneopen{
+  padding-right: 0px  !important;
+  padding-left: 0px !important;
+}
+#ja-menu-button {display: none; position: relative; }
+.ja-box-right{
+  position: relative !important;
+}

@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Mendozite template for Joomla 2.5.x 
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+body {	background:   url(../images/bckg.jpg) no-repeat top center #222;  background-size: 100%;}
+
+#frame {
+	background:  url(../images/dark-25.png);
+	 -webkit-box-shadow:  0px 0px 8px 2px #000;
+
+        box-shadow:  0px 0px 8px 2px #000;
+	margin-top: 125px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	border: 6px solid #333;
+	padding: 20px;
+	width: 400px;
+}
+
+#frame h1 {
+  background: url(../images/logo.png) no-repeat center center;
+  color: #666;
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+  padding: 5px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #fff;
+  text-indent: -999em;
+  width:143px;
+  text-align: center;
+}
+
+#frame #form-login p {
+  padding: 5px 0;
+  vertical-align: middle;
+}
+
+#frame p.offline-message {
+  color: #AAAA9E;
+   font-size: 17px;
+}
+
+#frame #form-login label {
+  color: #AAAA9E;
+  font-weight: bold;
+  vertical-align: middle;
+  margin: 0;
+  width: 8em;
+  display: block;
+    padding: 11px 0;
+  float: left;
+  font-size: 14px;
+}
+#form-login-remember label{
+padding: 0 !important;
+}
+
+#frame #form-login #remember {
+  margin: 0;
+  vertical-align: middle;
+  width: auto;
+}
+
+#frame #form-login .inputbox {
+	border: 1px solid #444;
+	background: url(../images/inputbox.png) repeat-x top;
+	padding: 8px;
+	width: 377px;
+    border-radius: 3px;
+    color:#7B7B6F;
+}
+
+#frame #form-login .inputbox:focus {
+   	 border-color: #555;
+     -webkit-box-shadow:  0px 0px 4px 1px #000;
+     box-shadow:  0px 0px 4px 1px #000;
+}
+
+#frame #form-login .button {
+    background:#AB4E39 !important;
+   border-top:1px solid #CE715C !important;
+   border-bottom:1px solid #7F3C1F !important;
+   border-right:1px solid #7F3C1F !important;
+   border-left:1px solid #7F3C1F !important;
+   border-radius: 4px !important;
+   padding: 2px 13px !important;
+   box-shadow: 0 0 2px 1px #000000 !important;
+   color:#E6E3BB;
+   -webkit-box-shadow: 0 0 2px 1px #000000 !important;
+   width: 395px;
+    margin-top: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: visible;
+	height: auto;
+}
+#frame #form-login .button:hover{
+   color: #CCCCCC !important; background-color: #555555 !important ;
+   border-color: transparent !important;
+   border-top: 1px solid #777777 !important;
+   box-shadow: 0 0 8px 2px #111 !important;
+   -webkit-box-shadow: 0 0 8px 2px #111 !important;
+   cursor: pointer !important;
+}

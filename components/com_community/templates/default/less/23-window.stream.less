@@ -1,0 +1,65 @@
+/**- STREAMS -**/
+@windowStreamSpacing		: 10px;
+@windowAvatarSize			: 32px;
+
+.cWindowNotification + .cWindowNotification
+{
+	margin: 15px 0 0;
+}
+.cWindowNotification-Jumper
+{
+	border-top: 1px solid #ddd;
+	margin: 15px 0 0;
+	padding: 10px 0 0;
+
+	a,
+	a:hover,
+	a:focus
+	{
+		.border-radius( 3px );
+		.box( #ccc #ccc #aaa );
+		.box-shadow( 0 1px 0 rgba(0, 0, 0, 0.05) );
+		color: #555;
+		cursor: pointer;
+		display: block;
+		font-weight: bold;
+		.gradient-vertical( #ffffff, #f0f0f0);
+		line-height: inherit;
+		height: auto;
+		padding: 8px;
+		text-align: center;
+		text-decoration: none !important;
+	}
+}
+.cWindowStream
+{
+	> li
+	{
+		display: inline-block;
+		width: 100%;
+
+		+ li
+		{
+			border-top: 1px solid #e5e5e5;
+			margin-top: 7px;
+			padding-top: 7px;
+		}
+	}
+}
+.cStream-Avatar img
+{
+	.square( @windowAvatarSize );
+}
+.cStream-Content
+{
+	margin: 0 0 0 (@windowAvatarSize + @windowStreamSpacing);
+}
+.cStream-Actions
+{
+	margin: 3px 0 0;
+}
+.cStream-Author,
+.cStream-Title
+{
+	font-weight: bold;
+}

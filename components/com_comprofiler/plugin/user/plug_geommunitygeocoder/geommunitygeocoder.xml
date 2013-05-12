@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cbinstall type="plugin" group="user">
+	<name>Geommunity Geocoder</name>
+	<author>Nordmograph</author>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>http://www.nordmograph.com</authorUrl>
+	<creationDate>February 2010</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0</version>
+	<description>Provides geocode lookup for users addresses. This uses the Google geocode API and if not successfull , the Yahoo geocode API. This plugin updates user latitude and longitude coordinates from User address to be used with the Geommunity map module  (from http://geommunity.nordmograph.com) showing every user on the same map. Fill in these fields with your CB user address fields. Fields are not mandatory but the more are filled in, the more accurate the result. The Geommunity Geocoder will process and override other Geommunity Locator data on profile edit submission according to the set mode. It can run with or without the Geommunity Locator CB plugin. It is Free, GPL and based on the CB1.2 framework. It has been inspired by geocoder plugins from Lanari and David Pollack.</description>
+	<files>
+		<filename plugin="geommunitygeocoder">geommunitygeocoder.php</filename>
+	</files>
+	<params>
+	<param name="mode" type="list" default="0" label="Geocode" description="When to trigger Geocode">
+	<option value="0">on every profile update</option>
+	<option value="1">on every Profile update when user latitude or longitude is null</option>
+</param>
+		<param name="geoAddress" type="text" size="20" default="cb_address" label="Address" description="Select the column for the Address Field." />
+		<param name="geoCity" type="text" size="20" default="cb_city" label="City" description="Select the column for the City Field." />
+		<param name="geoState" type="text" size="20" default="cb_state" label="State" description="Select the column for the State Field." />
+		<param name="geoZipcode" type="text" size="20" default="cb_zipcode" label="Zip Code" description="Select the column for the Zip Code Field." />
+		<param name="geoCountry" type="text" size="20" default="cb_country" label="Country" description="Select the column for the Country Field." />
+		
+		<param name="yahoo_appid" type="text" size="20" default="" label="Yahoo AppID" description="In case you want to use Yahoo API in case Google doesn't response, provide hear your appid from http://developer.yahoo.com/dashboard/createKey.html" />
+		
+	</params>
+	<tabs>
+		<tab name="Geommunity Coordinates" description="" class="geommunitygeocoder" fields="2" position="cb_tabmain" displaytype="tab">
+			<fields>
+				<field name="geoLat" type="text" size="20" default="" title="Latitude" description="Users Latitude." profile="0" />
+				<field name="geoLng" type="text" size="20" default="" title="Longitude" description="Users Longitude." profile="0" />
+			</fields>
+		</tab>
+	</tabs>
+</cbinstall>

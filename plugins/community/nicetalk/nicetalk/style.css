@@ -1,0 +1,55 @@
+div.nicetalk-see-all {
+    border-bottom: 1px solid #ECEFF5;
+	font-size: 90%;
+	margin: 0;
+	padding: 2px;
+	text-align: right;
+}
+
+ul#nicetalk-entries {
+	padding: 0;
+}
+ul#nicetalk-entries li
+{
+	list-style: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+ul#nicetalk-entries li div.ctitle {
+	margin: 0;
+	font-weight: normal;
+	padding-left: 0;
+	padding-right: 0;
+}
+span.nicetalk-tags
+{
+	background: transparent url(tag.png) no-repeat;
+	padding: 0 0 0 20px;
+	font-size: 90%;
+}
+span.nicetalk-tags-container {
+    font-size: 90%;
+}
+span.nicetalk-replies {
+	font-size: 85%;
+	color: #999;
+}
+span.nicetalk-error
+{
+	color: red;
+	display: none;
+}
+span.nicetalk-title
+{
+	font-weight: 700;
+}
+ul.nicetalk-entries
+{
+	margin: 0px;
+	padding:0px;
+}
+a.nicetalk-tag
+{
+	margin-right: 3px;
+}

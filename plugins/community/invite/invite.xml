@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Invite</name>
+	<author>JomSocial Team</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<version>2.2.4</version>
+	<isapplication>false</isapplication>
+	<isbrowsable>false</isbrowsable>
+	<description>PLG_INVITE_XML_DESCRIPTION</description>
+	<languages>
+	    <language tag="en-GB">en-GB.plg_community_invite.ini</language>
+		<language tag="en-GB">en-GB.plg_community_invite.sys.ini</language>
+	</languages>
+	<files>
+		<file plugin="invite">invite.php</file>
+	</files>
+	
+	<params>
+	</params>
+</install>

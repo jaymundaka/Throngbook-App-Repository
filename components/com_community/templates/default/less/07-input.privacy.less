@@ -1,0 +1,201 @@
+/*----- PRIVACY PICKER -----*/
+/*
+Section:Global Privacy Control
+By:Ross (ross@jomsocial.com)
+Added On:December 2nd,2010
+Description:This is the front-end style and control for the global privacy settings dropdown
+Dropdown control must be made using <SELECT> dropdown box.
+This control will be generated with JavaScript on the fly (with safe fallback)
+There's no limit to the number of items in the drop-down,as it will be traversed and generated.
+
+The only requirement is to follow the HTML template in privacy.php
+*/
+
+@privacyLine	: 16px;
+@privacyCell	: 120px;
+@privacyCellFat	: @privacyCell + @input-fat*2 + 25px;
+
+.js_PriCell {
+	width: @privacyCellFat;
+	display:inline-block;
+	
+	cursor: pointer;
+}
+.js_PriContainer {
+	position: relative;
+	z-index: 1;
+	height: @privacyLine;
+	padding: @input-fat @input-fat @input-fat 22px;
+}
+.js_PriContainerLarge .js_dropDownChild {
+	display: block;
+	min-width: 100px;
+	text-align: left !important;
+}
+.js_PriDefault {
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.js_PriDefault .js_PriOption {
+	background-image: url('../images/sprites-privacy.png') !important;
+	background-repeat: no-repeat !important;
+	padding-left: 22px;
+}
+.js_dropDownMaster,
+.js_dropDownMaster dd,
+.js_dropDownMaster dt,
+.js_dropDownParent {
+	margin: 0;
+	padding: 0;
+}
+.js_dropDownMaster {
+	border: 1px solid transparent;
+	.border-radius( 3px );
+	background: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.js_dropDownParent {
+	list-style-type: none;
+}
+.js_dropDownParent li {
+	background-image: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	text-align: left !important;
+}
+.js_dropDownMaster dt,
+.js_dropDownParent li > a {
+	display: block;
+	background-image: url('../images/sprites-privacy.png') !important;
+	background-repeat: no-repeat !important;
+	padding: @input-fat @input-fat*2 @input-fat 25px;
+	line-height: @privacyLine;
+	height: @privacyLine;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.js_dropDownParent li a {
+	background-color: #f5f5f5;
+	color: #222;
+
+	&:hover {
+		background-color: #e5e5e5 !important;
+	}
+}
+.js_dropDownMaster dt {
+	border: 1px solid transparent;
+	text-indent: -9999em;
+	min-width: 10px;
+}
+.js_PriContainerLarge .js_dropDownMaster dt 
+{
+	text-indent: 0;
+	min-width: @privacyCell;
+}
+.js_PriContainerLarge .js_dropDownMaster dd
+{
+	min-width: @privacyCellFat;
+}
+.js_dropDownMaster dt span {
+	display: block;
+	background: transparent url('../images/pri-arrow.png') no-repeat 50% 50%;
+	width: 10px;
+	height: 100%;
+	float: right;
+}
+.js_dropDownMaster dt strong {
+	display: block;
+	float: left;
+}
+.js_Current dt span,
+#cWindowContentWrap .js_Current dt span {
+	background: transparent url('../images/pri-arrow-up.png') no-repeat 50% 50%;
+}
+.js_dropDownMaster dd {
+	display: none;
+	position: absolute;
+	left: 0;
+}
+
+@iconOffset		: 7px;
+
+.js_dropDown-0,
+.js_dropSelect-0,
+.js_Pri-0 
+{
+	background-position: @iconOffset 50% !important;
+	
+	&:hover
+	{
+		background-position: @iconOffset 50% !important;
+	}
+}
+.js_dropDown-20,
+.js_dropSelect-20,
+.js_Pri-20 
+{
+	background-position: (-300px+@iconOffset) 50% !important;
+	
+	&:hover
+	{
+		background-position: (-300px+@iconOffset) 50% !important;
+	}
+}
+.js_dropDown-30,
+.js_dropSelect-30,
+.js_Pri-30 
+{
+	background-position: (-600px+@iconOffset) 50% !important;
+	
+	&:hover
+	{
+		background-position: (-600px+@iconOffset) 50% !important;
+	}
+}
+.js_dropDown-40,
+.js_dropSelect-40,
+.js_Pri-40 
+{
+	background-position: (-900px+@iconOffset) 50% !important;
+	
+	&:hover
+	{
+		background-position: (-900px+@iconOffset) 50% !important;
+	}
+}
+.js_PrivacyOpen
+{
+	z-index: 999999;
+
+	.js_dropDownMaster
+	{
+		dt,
+		dd
+		{
+			border: 1px solid #ccc;
+			overflow: hidden;
+		}
+		dt
+		{
+			.border-radius( 2px 2px 0 0 );
+		}
+		dd
+		{
+			.border-radius( 0 0 2px 2px );
+			left: auto;
+			right: 0;
+			margin-top: -1px;
+		}
+	}
+}
+.form-privacy .js_dropDownMaster
+{
+	left: auto;
+	right: 0;
+}

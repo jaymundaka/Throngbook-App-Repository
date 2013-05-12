@@ -1,0 +1,46 @@
+@sidebar-width		:	230px;
+@content-margin		:	@sidebar-width + 15;
+@app-fat			:	10px;
+@app-border		: 	#dadada;
+@app-shade		: 	#cccccc;
+
+/**
+* COMMUNITY :.cLayout
+* .cMain :Fluid width for main section
+* .cSidebar :Fixed width for sidebar
+* this class is reusable across the JomSocial.com application
+*/
+.cLayout {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+.cSidebar + .cMain {
+	margin: 0 @content-margin 0 0;
+}
+.cSidebar {
+	width: @sidebar-width;
+	float: right;
+}
+.cGridFluid
+{
+	display: inline-block;
+	width: 100%;
+}
+.cPagination
+{
+	text-align: center;
+
+	*
+	{
+		display:inline-block;
+		float: none;
+	}
+
+	ul,
+	li{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}

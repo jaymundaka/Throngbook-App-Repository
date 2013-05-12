@@ -1,0 +1,132 @@
+body {  -webkit-text-size-adjust: 100%; /*Fix Mobile Safari Font Scale*/}
+div.itemTagsBlock ul.itemTags li a, div.k2TagCloudBlock a{  font-size: 11px !important;}
+
+
+/* RESPONSIVE FONT SIZES
+--------------------------------------------------------- */
+body.fs1 #ja-wrapper {  font-size: 1.2em !important;}
+body.fs2 #ja-wrapper {  font-size: 1.3em !important;}
+body.fs3 #ja-wrapper {  font-size: 1.4em !important;}
+body.fs4 #ja-wrapper {  font-size: 1.5em !important;}
+body.fs5 #ja-wrapper {  font-size: 1.6em !important;}
+body.fs6 #ja-wrapper {  font-size: 1.7em !important;}
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+.main {  width: 720px;}
+
+/* MASONRY PRESETS (240px*5 Grids)
+--------------------------------------------------------- */
+/* Main Content */
+.ja-frontpage #ja-content {  float: none;  width: 100%; /* Frontpage Content 3 grids */}
+
+/* full 5 grids content */
+body.content-grid-mass #ja-content,
+body.content-grid-mass.ja-frontpage #ja-content {  width: 100% !important;}
+
+/* 4 grids content */
+body.content-grid-quadruple #ja-content,
+body.content-grid-quadruple.ja-frontpage #ja-content {  width: 100% !important;}
+
+/* 3 grids content */
+body.content-grid-tripple #ja-content,
+body.content-grid-tripple.ja-frontpage #ja-content {  width: 100% !important;}
+
+/* CONTENT'S GRIDS
+--------------------------------------------------------- */
+.items-row {}
+.items-row p img, .item-page p img, .items-leading p img{  width: 90% !important;}
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img ,span.catItemImage img , span.itemImage img{  width: 95% !important;}
+input, select, .inputbox, #form-login-username .inputbox, #form-login-password .inputbox{  padding: 6px 5px;    font-size: 13px;}
+.items-row .item .contentpaneopen {}
+.item {}
+.cols-1 .item {  float: none;  width: 100% !important;}
+.cols-2 .item,
+.cols-3 .item,
+.cols-4 .item,
+.cols-5 .item {
+  width: 50% !important;
+}
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {}
+#ja-header .main {}
+#ja-header .main-inner1 {  margin: 0;}
+h1.logo {}
+h1.logo a { background-image: url(../images/mon-tab-logo.png);}
+body#bd {  background: url(../images/bckg.jpg) no-repeat top center #222 ; background-size: 100%; }   
+/* Search & Social Bars ---*/
+#ja-top {  height: 40px;  width: 600px;  position: absolute;  right: 0;  top: 15px;}
+/* Search */
+#ja-search {margin-top:9px; position: absolute;    right: 74px;}
+#ja-login{margin-top:6px; position: absolute;    right: 114px;}
+#ja-search .search-btn {}
+#ja-search.active .search-btn,
+#ja-search .search-btn:hover {}
+#ja-search form.search {  display: none;  position: absolute;  top: 44px;  right: 0px;}
+
+#ja-search:hover form.search,
+#ja-search.active form.search {  display: block !important;}
+
+#ja-search .inputbox {  background: #222;  border: 1px solid #111; color: #CCC; margin: 0; padding: 4px 0; text-indent: 10px;  width: 100%;}
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {}
+/* MODULES
+--------------------------------------------------------- */
+/* Hiden in Tablet ---*/
+.hide-in-normal,
+.hide-in-tablet {  display: none;}
+#ja-lang{     width: 67px;     margin-top:7px;  position: absolute;    right: 260px;  }
+div.mod-languages ul.lang-block li {    padding: 2px 0;}
+body .moduletable_brown .ja-box-ct , body .moduletable_green .ja-box-ct , body .moduletable_blue .ja-box-ct ,body .moduletable_brown-blank .ja-box-ct{
+  padding: 8px !important;
+}
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+/* Main Nav ---*/
+#ja-mainnav { clear: both; display: block; float: right; height: auto; margin: 0 auto; text-align: left;width: auto;}
+/* Mega Menu Layout ---*/
+.ja-megamenu { clear: both; display: none !important; height: auto; border-bottom: 1px solid #333;}
+.rjd-active .ja-megamenu { display: block !important; /* Show menu when active */ border-top:2px solid #8E4524;}
+.ja-megamenu ul.level0 li.mega {height: auto !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+.ja-megamenu ul.level0 li.mega a.mega { height: auto !important;margin: 0 !important; padding: 1em !important;}
+.ja-megamenu ul.level0 li.mega span.menu-title,
+.ja-megamenu ul.level0 li.haschild span.menu-title { font-size: 1em !important; margin: 0 !important; padding: 0 !important;  text-transform: none !important;}
+.ja-megamenu ul.level1 li.mega span.menu-title {  margin-top: 0 !important;}
+.ja-megamenu ul.level1 li.mega {  height: auto !important;}
+.ja-megamenu ul.level1 li.mega a.mega {height: auto !important;}
+.ja-megamenu ul.level0 li.mega span.menu-desc {  display: none;}
+#ja-megamenu .childcontent {  display: none !important;}
+#ja-megamenu li.rjd-active {  background: #222;}
+#ja-megamenu li.rjd-active .childcontent {display: block !important; left: 0 !important;  margin: 0 !important;position: absolute;top: 40px !important; width: 100% !important;}
+#ja-megamenu ul.level0 li.rjd-active .childcontent-inner-wrap,
+#ja-megamenu ul.level0 li.rjd-active .childcontent-inner {  margin: 0 !important; width: 100% !important;}
+#ja-megamenu ul.level0 {  position: relative;}
+/*Hide lv 2 Content */
+#ja-megamenu ul.level1 li.rjd-active .childcontent,
+#ja-megamenu ul.level1 .childcontent { display: none !important;}
+/* Mega Menu Stylings --- */
+.ja-megamenu { background: #222 !important;}
+.ja-megamenu ul.level0 li.mega {  background: url(../images/right-li.png) repeat-x bottom;}
+/* Menu Button --- */
+/* to use this value to detect responsive
+ * > 3: mean responsive
+ * 4: is mobile device, which the menu show only first level
+ */
+#ja-menu-button {  display: block;  background: url(../images/mob-menu.png) no-repeat top left !important; width: 40px; height: 40px;  float: right;  padding: 0;   margin-right: 25px;  z-index: 4;  margin-top: 10px;  margin-bottom: 6px; border-radius: 20px;}
+#ja-menu-button:hover,
+.rjd-active #ja-menu-button {  cursor: pointer;  box-shadow: 0 0 8px #111; margin-bottom: 6px;}
+.top11 #ja-login, .top11 #ja-lang, .top11 #ja-search{  position: absolute !important;}
+.slide-desc-text .slide-title a {
+ padding: 6px;
+ background: url(../images/pattern.png) #222;
+ border: 1px solid #AB4E39;
+ border-radius: 8px;
+}
+.slide-desc{ width: 100% !important;  top: auto;}
+.slide-desc-text .readmore{  display: none;}
+div.itemComments {    width: 111% !important;}
+#ja-inset2 div.ja-moduletable, #ja-inset2 div.moduletable
+,#ja-inset1 div.ja-moduletable, #ja-inset1 div.moduletable{    padding: 6px 6px 15px 6px !important;}
+.top11 #ja-menu-button  {   z-index: 1 !important;   background: url(../images/mob-menu.png) no-repeat top left !important;}

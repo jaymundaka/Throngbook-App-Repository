@@ -1,0 +1,10 @@
+.ml{
+  left: auto;
+  right: 30px;
+}
+.ja-megamenu ul.level1 li.mega a.mega {background-position:  right 12px;	padding-left: 0px;	padding-right:15px;}
+.ja-megamenu ul.level1 li.mega a.mega:hover , .ja-megamenu ul.level1 li.mega a.over, .ja-megamenu ul.level1 li.mega a.active {  background-position:  right 12px;}
+.ja-megamenu ul.level1 li.haschild{  background: none;}
+.ja-megamenu ul.level0 li.mega a.mega{padding: 6px 12px;}
+.ja-megamenu ul.level0 li.haschild a.mega span.menu-title ,.ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title, .ja-megamenu ul.level0 li.haschild a.active span.menu-title {background-position: 0% 7px;padding-left: 18px ;padding-right: 0px;}
+

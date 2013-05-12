@@ -1,0 +1,6 @@
+.ja-masonry,
+.grid-double,
+.grid-tripple,
+#ja-header .main,
+#ja-content,
+.item {  float: none !important;  width: 100% !important;}

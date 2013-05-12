@@ -1,0 +1,58 @@
+.cEvent-Rsvp
+{
+	.selector 
+	{
+		display: block;
+		.gradient-vertical( #ffffff, #f0f0f0 );
+		border: 1px solid #ccc;
+		border-bottom-color: #bbb;
+		.border-radius( 3px );
+		position: relative;
+
+		span,
+		select,
+		option
+		{
+			color: #666;
+			font-family: Arial,sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 14px;
+			height: 14px;
+			padding: 7px 8px;
+			text-indent: 25px;
+		}
+
+		span
+		{
+			display: block;
+		}
+		select
+		{
+			background: #f5f5f5;
+			border: 1px solid #ccc;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			left: -1px;
+			top: 0;
+			width: 100%;
+		}
+		option + option
+		{
+			border-top: 1px solid #ccc;
+		}
+
+		.attend,
+		.notAttend {
+			background-image: url('../images/rsvp.png');
+			background-repeat: no-repeat;
+		}
+		.attend {
+			background-position: 10px 0;
+		}
+		.notAttend {
+			background-position: 10px -28px;
+		}
+	}
+}

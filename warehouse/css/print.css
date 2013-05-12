@@ -1,0 +1,14 @@
+/* CSS PRINT */ 
+ 
+
+/* start */
+body {
+background-color:#fff; 
+background-image: none !important;
+color:#000; 
+font:normal normal normal 16px/24px arial,sans-serif; 
+height:100%; 
+text-align:left;
+padding: 10px 20px !important;
+}
+

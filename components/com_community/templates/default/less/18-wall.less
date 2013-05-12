@@ -1,0 +1,70 @@
+@wallAvatar-size		: 48px;
+@wallContent-space		: @wallAvatar-size + 10;
+@wallComment-fat		: 15px;
+.wallComment-border()
+{
+	border-top: 1px solid #e5e5e5;
+	padding: @wallComment-fat 0 0;
+	margin: @wallComment-fat 0 0;
+}
+
+
+.cWall-Header
+{
+	border-top: 3px solid #eee;
+	font-weight: bold;
+	padding: @wallComment-fat 0;
+	margin: @wallComment-fat 0 0;
+}
+.cWall-Content
+{
+	.wallComment-border();
+}
+.cComments
+{
+	display: inline-block;
+	width: 100%;
+}
+.cComment
+{
+	+ .cComment
+	{
+		border-top: 1px solid #e5e5e5;
+		margin-top: @wallComment-fat;
+		padding-top: @wallComment-fat;
+	}
+}
+.cComment-Avatar
+{
+	img.avatar
+	{
+		.square( @wallAvatar-size );
+	}
+}
+.cComment-Body
+{
+	margin: 0 0 0 @wallContent-space;
+}
+.cComment-Author
+{
+	font-weight: bold;
+}
+.cComment-Content
+{
+	margin: 5px 0;
+}
+.cComent-Actions
+{
+	margin: @wallComment-fat 0 0;
+	text-align: right;
+}
+.cComments-All
+{
+	.wallComment-border();
+
+	.cButton
+	{
+		display: block;
+		text-align: center;
+	}
+}

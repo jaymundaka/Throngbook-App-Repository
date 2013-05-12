@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout name="desktop">
+	<!--Extra css load for this layout-->
+	<stylesheets>
+        <file media="all">css/layout.css</file>
+		<file media="all">css/template.css</file>
+		<file media="all">css/modules.css</file>
+		<file media="only screen and (max-width:719px)">css/layout-mobile.css</file>
+		<file media="only screen and (max-width:479px)">css/layout-mobile-port.css</file>
+		<file media="only screen and (min-width:720px) and (max-width: 985px)">css/layout-tablet.css</file>
+		<file media="only screen and (min-width:986px) and (max-width: 1235px)">css/layout-normal.css</file>
+		<file media="only screen and (min-width:1236px)">css/layout-wide.css</file>
+		<file condition="ie">css/template-ie.css</file>
+		<file condition="ie 7">css/template-ie7.css</file>
+		<file condition="ie 8">css/template-ie8.css</file>
+	</stylesheets>
+    <scripts>
+    <file>js/st.js</file>
+    <file>js/mega.rjd.js</file>
+	<file>js/jquery/jquery-1.6.4.min.js</file>
+	<file>js/jquery.masonry.js</file>
+	<file>js/jquery.mediaqueries.js</file>
+    <content>jQuery.noConflict();</content>
+    </scripts>
+	<blocks name="top" style="xhtml">
+		<block name="absolute" type="modules" style="raw">absolute</block>
+		<block name="header" type="header" main-inner="1"></block>
+
+		<block name="cpanel" type="usertools/cpanel"></block>
+        <block name="slideshow" type="modules">slideshow</block>
+        <block name="bread" type="modules">brt</block>
+	</blocks>
+	<blocks name="middle" main-inner="1" colwidth="28.5" fixheight="1">
+		<block name="content-top" type="spotlight" main-inner="1">top1,top2,top3,top4</block>
+		<block name="content-bottom">content-bot</block>
+		<block name="content-mass-top" type="spotlight" main-inner="1">breadcrumbs</block>
+		<block name="content-mass-top2" type="spotlight" main-inner="1">tp1,tp2,tp3,tp4</block>
+		<block name="content-mass-bottom" type="spotlight" main-inner="2">con-bot1,con-bot2,con-bot3</block>
+		<block name="inset1">Sidebar</block>
+	</blocks>
+	<blocks name="bottom" style="xhtml">
+        <block name="bot-1" type="spotlight" main-inner="2" specialwidth="57">bot1,bot2</block>
+        <block name="bot-2" type="spotlight" main-inner="1">pos1,pos2,pos3,pos4</block>
+		<block name="footer" type="spotlight">footer,footer-right</block>    
+	</blocks>
+</layout>

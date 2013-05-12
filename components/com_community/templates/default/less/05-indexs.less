@@ -1,0 +1,145 @@
+/**
+* COMMUNITY : INDEX LISTING
+* Affected files:- reusable across the components
+*/
+
+@avatar-square: 64px;
+@content-space: @avatar-square + 15;
+
+.cIndexList
+{
+	> li
+	{
+		display: inline-block;
+		width: 100%;
+		margin:0 0 15px;
+	}
+	> li:hover
+	{
+		.cIndex-Control
+		{
+			display: block;
+		}
+	}
+}
+.cIndex-Box
+{
+	border: 1px solid #dadada;
+	border-bottom-color: #ccc;
+	.border-radius(3px);
+	.box-shadow( 0 1px 0 rgba(0, 0, 0, 0.05) );
+	padding: 10px;
+	position: relative;
+}
+.cIndex-Avatar
+{
+	img
+	{
+		.square( @avatar-square );
+	}
+}
+.cIndex-Content
+{
+	margin: 0 0 0 @content-space;
+	min-height: @avatar-square;
+	position: relative;
+}
+.cIndex-Status
+{
+	padding: 0 0 25px;
+	margin: 5px 0 0;
+}
+.cIndex-Actions
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	> div
+	{
+		display:inline-block;
+		line-height: 20px;
+
+		+ div
+		{
+			margin: 0 0 0 10px;
+		}
+		&.cIndex-Feature
+		{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+
+
+
+
+.update-seperator()
+{
+	border-top: 1px dotted #ddd;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+.cUpdatesList
+{
+	> li
+	{
+		display: inline-block;
+		width: 100%;
+
+		+ li
+		{
+			.update-seperator()
+		}
+	}
+	.updateTitle
+	{
+		font-size: 120%;
+		line-height: 1.3;
+		font-weight: bold;
+	}
+	.updateText
+	{
+		margin: 5px 0 0;
+	}
+	.updateMeta
+	{
+		margin: 5px 0 0;
+	}
+	.updateContent
+	{
+		margin: 0 0 0 60px;
+		position: relative;
+	}
+	.update-quote
+	{
+		border-left: 2px solid #eee;
+		padding: 0 0 0 15px;
+		margin: 7px 0;
+	}
+	.update-quote-meta
+	{
+		margin: 5px 0 0;
+	}
+}
+.cUpdatesHelper
+{
+	.update-seperator();
+
+	.updates-options
+	{
+		a + a
+		{
+			border-left: 1px solid #ddd;
+			display: inline-block;
+			padding: 0 0 0 5px;
+			margin: 0 0 0 5px;
+		}
+	}
+}
+

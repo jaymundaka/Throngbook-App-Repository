@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Geo QRCode Profile Application</name>
+	<author>Nordmograph</author>
+	<creationDate>5 October 2010</creationDate>
+	<copyright>Copyright 2010 - Nordmograph.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>http://www.nordmograph.com</authorUrl>
+	<version>1.8</version>
+	<isapplication>true</isapplication>
+	<description>
+		Geo QRCode to let your profile visitors get directions to your place in one shot! Choose to display this on the side of your profile. If you want to have more control on your location display, you might want to use our Geommunity Locator application.
+	</description>
+	<languages>
+	    <language tag="en-GB">en-GB.plg_geoqrcode.ini</language>
+		<language tag="fr-FR">fr-FR.plg_geoqrcode.ini</language>
+	</languages>
+	<files>
+		<file plugin="geoqrcode">geoqrcode.php</file>
+		<folder>geoqrcode</folder>
+	</files>
+	
+	<menuitem>
+	</menuitem>
+	
+	<params>
+	<param name="@spacer" type="spacer" default="Thank you for having downloaded this Geo QR Code application. This reads Jomsocial user coordinates to display a QR Code on profile. Using for exemple QRapp on an Iphone or ZXing on Android, people scanning this geo QRCode will have a map open on their device screen with a marker showing the user location. Great to get directions! Jomsocial since v1.8 geocodes users from their postal address which is great. One thing though: the latitude and longitude fields type in the jos_community_users table are set to FLOAT which makes them very approximate. To make sure your users geo coordinates are precise, change this to VARCHAR(255) using phpMyAdmin. This feature has been inspired by the geo QR Code from the Geommunity Suite for Jomsocial which is by far the best user mapping solution for Joomla. Make sure you visit: http://geommunity.nordmograph.com " label="" description=""></param>
+		<param name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+			<option value="1">Use Global</option>
+			<option value="0">No</option>
+		</param>
+		<param name="side" type="text" default="200" label="QR Code side size" description="default is 200 (without px)" />
+	</params>
+</install>

@@ -1,0 +1,55 @@
+.cToolBox 
+{
+	background: #f3f3f3;
+	border: 1px solid #ddd;
+	border-bottom-color: #ccc;
+	.border-radius( 3px );
+	.box-shadow( 0 1px 0 rgba(0, 0, 0, 0.05) );
+	padding: 14px;
+	margin: 0 0 @toolbarMargin;
+}
+.cToolBox-Avatar
+{
+	margin: 0 14px 0 0;
+	img
+	{
+		.square( 42px );
+	}
+}
+.cToolBox-Options
+{
+	margin: -10px 0 0;
+
+	li
+	{
+		margin: 0 0 0 7px;
+
+		a
+		{
+			background: none !important;
+			text-decoration: none !important;
+			display: inline-block;
+			font-size: 11px;
+			line-height: 20px;
+
+			span
+			{
+				padding: 0 3px;
+				.border-radius ( 3px )
+			}
+			&:hover span
+			{
+				background: #aaa;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+.cToolBar + .cToolBox
+{
+	margin-top: -(@toolbarMargin);
+	border-top: 0;
+	.border-radius( 0 0 3px 3px );
+}

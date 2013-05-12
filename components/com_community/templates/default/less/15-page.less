@@ -1,0 +1,367 @@
+@page-avatar				:	160px;
+@border-color-default		:	#e5e5e5;
+@button-radius				: 3px;
+
+.cPageActions
+{
+	border-bottom: 1px solid @border-color-default;
+	margin: 0 0 20px;
+	padding: 0 0 15px;
+	text-align: right;
+	font-size: 0;
+
+	.cFloat-L + .cFloat-L
+	{
+		margin: 0 0 0 10px;
+	}
+}
+.cPageOwner
+{
+	font-size: 11px;
+	padding-top: 5px;
+}
+.cPageAction
+{
+	> div 
+	{
+		background: #eee;
+		.box( #ccc #ccc #bbb);
+		.border-radius( 0 );
+		display: inline-block;
+		.gradient-vertical( #ffffff, #f0f0f0 );
+
+		+ div { border-left: 0; }
+
+		&:first-child
+		{
+			-webkit-border-top-left-radius 		: @button-radius;
+			   -moz-border-radius-topleft 		: @button-radius;
+					border-top-left-radius 		: @button-radius;
+			-webkit-border-bottom-left-radius 	: @button-radius;
+			   -moz-border-radius-bottomleft 	: @button-radius;
+					border-bottom-left-radius 	: @button-radius;
+		}
+		&:last-child
+		{
+			-webkit-border-top-right-radius		: @button-radius;
+			   -moz-border-radius-topright		: @button-radius;
+					border-top-right-radius 	: @button-radius;
+			-webkit-border-bottom-right-radius 	: @button-radius;
+			   -moz-border-radius-bottomright 	: @button-radius;
+					border-bottom-right-radius 	: @button-radius;
+		}
+
+		a,
+		a:hover
+		{
+			color: #555 !important;
+			font-size: 11px;
+			font-weight: bold;
+			background: none !important;
+			display: inline-block;
+			text-decoration: none !important;
+			height: 20px;
+			line-height: 20px;
+			padding: 4px 6px;
+		}
+	}
+}
+.cPageMeta
+{
+	font-size: 11px;
+}
+
+
+.cPageHeader
+{
+	padding: 0 0 20px;
+	overflow: hidden;
+
+	&.otherProfile
+	{
+		border-bottom: 0;
+	}
+}
+
+@pageLikeSpace		: 40px;
+@pageAvatarFat		: 1px;
+
+.cPageAvatar
+{
+	border:1px solid #ccc;
+	border-bottom-color: #aaa;
+	padding: @pageAvatarFat;
+	position: relative;
+	margin-bottom: @pageLikeSpace;
+
+	> div
+	{
+		img
+		{
+			width: @page-avatar;
+			height: auto;
+		}
+
+		b
+		{
+			bottom: 10px;
+			display: none;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+
+			a
+			{
+				background: #666;
+				background: rgba(0,0,0,0.7);
+				.border-radius( 3px );
+				color: #fff;
+				display: inline-block;
+				line-height: 15px;
+				font-weight: normal;
+				padding: 10px 15px;
+				text-decoration: none;
+
+				&:hover
+				{
+					background: #222;
+					background: rgba(0,0,0,0.85);
+				}
+			}
+		}
+
+		&:hover
+		{
+			b
+			{
+				display: block;
+			}
+		}
+	}
+
+	.cPage-Like
+	{
+		position: absolute;
+		bottom: -@pageLikeSpace;
+		left: -@pageAvatarFat;
+	}
+}
+.cPageInfo
+{
+	margin: 0 0 0 (@page-avatar + 15);
+}
+.cPageInfo-Status
+{
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 10px;
+	margin: 10px 0;	
+}
+.cPageInfo-List
+{
+	li
+	{
+		+ li
+		{
+			margin-top: 7px;
+		}
+		> b
+		{
+			line-height: 1.1;
+		}
+	}
+}
+.cPageToolbox
+{
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	border-bottom-color: #bbb;
+	.border-radius( 3px );
+	.box-shadow( 0 1px 0 rgba(0, 0, 0, 0.05) );
+	padding: 5px 0 0;
+	margin: 0 0 10px;
+
+	li
+	{
+		// width:33.33335%;
+	}
+	a
+	{
+		background: none;
+		border: 1px solid transparent;
+		.border-radius( 3px );
+		color: #444 !important;
+		display: block;
+		margin: 0 0 5px 5px;
+		padding: 3px 5px;
+		text-decoration: none!important;
+
+		&:hover
+		{
+			background: #eee;
+			border-color: #ddd;
+		}
+	}
+}
+.cPageStory-Editor
+{
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.cPageTabs
+{
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0 0 20px;
+	padding: 15px 0;
+
+	li
+	{
+		+ li
+		{
+			margin: 0 0 0 5px;
+		}
+		a
+		{
+			.border-radius( 3px );
+			color: inherit;
+			display: inline-block;
+			font-size: 90%;
+			line-height: 1.2;
+			padding: 8px 10px;
+			text-decoration: none;
+
+			&:hover
+			{
+				background: none;
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+
+		&.cTabCurrent
+		{
+			a
+			{
+				background: #555;
+				color: #fff;
+				text-decoration: none!important;
+			}
+		}
+		&.cTabDisabled
+		{
+			a
+			{
+				color: #999;
+				cursor: default;
+			}
+		}
+		
+	}
+}
+
+.cTabsContentWrap
+{
+	.cTabsContent
+	{
+		display: none;
+
+		&.cTabsContentCurrent
+		{
+			display: block;
+		}
+	}
+}
+
+@field-spacing : 13px;
+
+.cField
+{
+	+ .cField
+	{
+		margin-top: @field-spacing;
+		padding-top: @field-spacing;
+		border-top: 1px solid #ddd;
+	}
+
+	.cField-Title
+	{
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: @field-spacing;
+	}
+
+	.cField-Name
+	{
+		font-family: inherit;
+		font-size: 90%;
+		font-weight: normal;
+		color: #999;
+		margin: 0 0 3px;
+	}
+
+	.cField-List
+	{
+		li + li 
+		{
+			margin-top: 10px;
+		}
+	}
+}
+.cPageAdmin 
+{
+	background-color: #F2DEDE;
+	border: 1px solid #cda6ab;
+	.border-radius(3px);
+	padding: 10px;
+	margin: 0 0 20px;
+
+	li + li
+	{
+		border-left: 1px dotted #cda6ab;
+		padding: 0 0 0 10px;
+		margin: 0 0 0 10px;
+	}
+
+	a
+	{
+		background: none !important;
+		color: #ae3e4c !important;
+		text-decoration: none;
+		font-size: 90%;
+
+		&:hover
+		{
+			text-decoration: underline;
+		}
+	}
+}
+.cPageOptions
+{
+	margin: 0 0 0 10px;
+	
+	li
+	{
+		margin: 0 0 5px;
+	}
+}
+.cInvite-Relations
+{
+	margin-top: 3px;
+	font-size: 11px;
+}
+.cInvite-Actions
+{
+	margin-top: 5px;
+}
+
+
+
+
+/** GROUPS **/
+
+.cEvent-Activity,
+.cGroup-Activity,
+{
+	.cStream-Reference { display: none; }
+}
