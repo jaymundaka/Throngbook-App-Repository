@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Navigation</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+    	<link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+    	<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+	<div id="content">
+		<h1 class="top-aligned">Navigation</h1>
+			<h2>Breadcrumb</h2>
+				<nav class="breadcrumbs">
+					<ul>
+						<li class="first"><a href="index.html">Home</a> &gt;</li>
+						<li><a href="index.html">Lorem ipsum</a> &gt; </li>
+						<li>Dolor sit amet</li>
+					</ul>
+				</nav>
+				<h2>Horizontal menu</h2>
+				<nav class="horizontal">	
+					<ul class="four-piece">
+						<li><a class="first" href="index.html">Lorem</a></li>
+						<li><a href="index.html">Ipsum</a></li>
+						<li><a href="index.html">Dolor</a></li>
+						<li><a href="index.html">Amet</a></li>
+					</ul>
+				</nav>
+			<h2>Back to top navigation</h2>	
+			<nav class="pagelevel top">
+				<a href="#content">Back to top</a>
+			</nav>
+			<h2>Back to home navigation</h2>	
+			<nav class="pagelevel home">
+				<a href="index.html">Home</a>
+			</nav>
+	</div>
+		<footer class="extended group">
+			<nav class="admin">
+				<ul>
+					<li class="first"><a href="index.html">Lorem</a></li>
+					<li><a href="index.html">Ipsum</a></li>
+					<li class="last"><a href="index.html">Dolor &amp; Ipsum</a></li>
+				</ul>
+			</nav>
+			<p>&copy; 2011 Forum Nokia</p>
+		</footer>
+	</div>
+	</body>
+</html>

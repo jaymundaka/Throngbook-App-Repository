@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+		<link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+    	<script type="text/javascript" src="resources/scripts/templates.js"></script>
+    	<script type="text/javascript">
+			function init() {
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+	<div id="content">
+		<h1 class="top-aligned">Tables</h1>
+		<h2>Table with top and side header</h2>
+		<table>
+	  		<caption>Lorem ipsum dolor.</caption>
+	  		<thead>
+		  		<tr>
+		    		<th scope="col">Lorem</th>
+		    		<th scope="col">Ipsum</th>
+		    		<th scope="col">Dolor</th>
+		 		</tr>
+	 		</thead>
+		 	<tbody>
+		  		<tr>
+		    		<th scope="row">Lorem 1</th>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		<tr class="odd">
+		    		<th scope="row">Lorem 2</th>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		<tr>
+		    		<th scope="row">Lorem 3</th>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		 <tr class="odd">
+		    		<th scope="row">Lorem 4</th>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+			  </tbody>
+		</table>
+		<h2>Simple table</h2>
+		<table>
+	  		<caption>Lorem ipsum dolor.</caption>
+	  		<thead>
+		  		<tr>
+		    		<th scope="col">Lorem</th>
+		    		<th scope="col">Ipsum</th>
+		    		<th scope="col">Dolor</th>
+		 		</tr>
+	 		</thead>
+	 		<tbody>
+		  		<tr>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		<tr class="odd">
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		<tr>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+		  		 <tr class="odd">
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		    		<td>Lorem ipisum</td>
+		  		</tr>
+	  		</tbody>
+		</table>
+			<nav class="pagelevel home">
+				<a href="index.html">Home</a>
+			</nav>		
+			</div>
+		<footer class="group">
+			<p>&copy; 2011 Forum Nokia</p>
+		</footer>
+		</div>
+	</body>
+</html>

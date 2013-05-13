@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Utility Components</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+    	<link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var slideShow = new Slideshow ("slideshow", 4, true);
+				var myToggle = new ToggleSwitch(["toggler1","toggler2"]);
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+		<div id="content">
+		<h1 class="top-aligned">Utility components</h1>
+		<h2>Slideshow</h2>
+		<section id="slideshow">
+			 <div class="slideshow-image">
+				 <img src="resources/images/photos/image_001.png" width="200" height="130" alt="" />
+			</div>
+			 <p></p>
+			 <nav class="horizontal">
+				 <ul class="controls two-piece group">
+					 <li class="previous">
+						 <a class="first" href="#slideshow"><img src="resources/images/back.png" /></a>
+					 </li>
+					 <li class="next">
+						 <a href="#slideshow"><img src="resources/images/next.png" /></a>
+					 </li>
+				 </ul>
+			 </nav>
+		 </section>
+		<h2>Toggle</h2>
+		<ul class="list-toggle group">
+				<li>
+					<ul class="toggle group">
+						<li>
+							<label>Label</label>
+							<input id="toggler1" type="checkbox" name="preference" checked="checked" />
+						</li>
+					</ul>
+				</li>
+		</ul>
+		<ul class="list-toggle group last">
+				<li>
+					<ul class="toggle group">
+						<li>
+							<label>Label</label>
+							<input id="toggler2" type="checkbox" name="preference" checked="checked" />
+						</li>
+					</ul>
+				</li>
+		</ul>
+		<h2>5-star rating</h2>
+		<section class="rating stars-3">
+			<span class="group">3/5</span>
+		</section>
+		<nav class="pagelevel home">
+			<a href="index.html">Home</a>
+		</nav>
+		</div>
+			<footer class="group">
+				<p>&copy; 2011 Forum Nokia</p>
+			</footer>
+		</div>
+	</body>
+</html>

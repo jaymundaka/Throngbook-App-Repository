@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Content</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+        <link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+		<header id="header">
+			<div class="branding group">	
+				<a href="index.html"><img src="resources/images/logo.png" alt="Company name" /></a>
+			</div>
+		</header>
+		<div id="content">
+			<h1>H1 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h1>
+			<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minim venia.</em></p>
+			<h2>H2 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h2>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+			<div class="advertisement">
+				<span>Advertisement</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adpisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+			</div>
+			<h3>H3 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <a href="sms:01234545">SMS</a> aliqua. Ut enim ad <a class="external" href="http://nokia.mobi">laboris</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h4>H4 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <a href="mailto:info@yourcompany.com?subject=Sample%20subject%20line">email</a> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h5>H5 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h5>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</blockquote>
+			<h6>H6 Lorem ipsum dolor sit amet, consectetur adipisicing elit enim</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<aside class="box-rounded">
+					<div class="box-rounded-inner">
+						<div class="box-rounded-outer">
+							<h2>Lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ad minim veniam, quis nostrud <a class="ical" href="resources/data-ical.php">lorem <strong>iCal</strong></a> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</aside>
+				<aside class="box-flat">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Lorem ipsum: <a href="tel:123456789">+44 123 456 789</a></p>
+				</aside>
+				<nav class="pagelevel home">
+					<a href="index.html">Home</a>
+				</nav>
+		</div>
+		<footer class="group">
+				<p>&copy; 2011 Forum Nokia</p>
+		</footer>
+	</div>
+	</body>
+</html>

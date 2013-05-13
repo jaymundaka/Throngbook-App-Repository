@@ -1,11 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ThrongApp</title>
-</head>
-
-<body>
-Throngbook App
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nokia Mobile Web Templates</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+		<link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+	<div id="content">
+	<h1 class="top-aligned">Nokia Mobile Web Templates</h1>
+	<h2>Components</h2>
+	<nav>
+		<ul class="list">
+			<li class="list"><a href="content.html">Content</a></li>
+			<li class="list"><a href="form.html">Forms</a></li>
+			<li class="list"><a href="lists.html">Lists</a></li>
+			<li class="list"><a href="buttons.html">Button</a></li>
+			<li class="list"><a href="navigation.html">Navigation</a></li>
+			<li class="list"><a href="table.html">Tables</a></li>
+			<li class="list"><a href="utility.html">Utility</a></li>
+		</ul>
+	</nav>
+	</div>
+		<footer class="extended group">
+			<p>&copy; 2011 Forum Nokia</p>
+		</footer>
+	</div>
+	</body>
 </html>

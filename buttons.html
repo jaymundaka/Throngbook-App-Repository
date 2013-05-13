@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+		<link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+    	<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+	<div id="content">
+		<h1 class="top-aligned">Button</h1>
+		<h2>Simple button</h2>
+		<p>This button includes an optional function that can be used to automatically add the hover state on press, then remove it on release. Please see the template documentation for more information.</p>
+				<a class="button" onMouseDown="JavaScript:doHighlight(this);" href="">Click Here</a>
+		<nav class="pagelevel home">
+			<a href="index.html">Home</a>
+		</nav>
+	</div>
+	<footer class="extended group">
+		<p>&copy; 2011 Forum Nokia</p>
+	</footer>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lists</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+		 <link href="resources/styles/baseStyles.css" rel="stylesheet" type="text/css" />
+    	<script type="text/javascript" src="resources/scripts/templates.js"></script>
+		<script type="text/javascript">
+			function init() {
+				var myAccordionList = new AccordionList("accordion");
+				var myStyleTweaks = new StyleTweaker();
+				myStyleTweaks.add("AppleWebKit/420+", "resources/styles/tweaks/S40webkit.css");
+				myStyleTweaks.add("Maemo", "resources/styles/tweaks/maemo.css");
+				myStyleTweaks.tweak();
+			}
+			addEvent("onload",init);
+		</script>
+	</head>
+	<body>
+	<div id="wrap">
+	<div id="content">
+		<h1 class="top-aligned">Lists</h1>
+		<h2>List with inline image</h2>
+			<ul class="list-graphical group">
+				<li><a href="index.html"><img src="resources/images/img-40x40.png" width="" height="" alt="image" />Line 1</a></li>
+				<li><a href="index.html"><img src="resources/images/img-40x40.png" width="" height="" alt="image" />Line 2</a></li>
+			</ul>
+		<h2>Styled list</h2>
+		<nav>
+			<ul class="list group">
+				<li class="group"><a href="index.html">Line 1 </a><span></span></li>
+				<li class="group"><a href="index.html">Line 2 </a><span></span></li>
+			</ul>
+		</nav>
+		<h2>Simple unordered list</h2>
+			<ul>
+				<li>Line 1</li>
+				<li>Line 2</li>
+				<li>Line 3</li>
+			</ul>
+		<h2>Simple ordered list</h2>
+			<ol>
+				<li>Line 1</li>
+				<li>Line 2
+					<ol>
+						<li>Nested 1</li>
+						<li>Nested 2</li>
+					</ol>
+				</li>
+				<li>Line 3</li>
+			</ol>
+		<h2>Accordion list</h2>
+		<dl id="accordion" class="list-accordion">
+			<dt><span></span>Lorem</dt>
+		    	<dd>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    	</dd>
+	    	<dt class="collapsed"><span></span>Ipsum</dt>
+		    	<dd>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    	</dd>
+	    	<dt class="expanded"><span></span>Dolor</dt>
+		    	<dd>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquas.</p>
+		    	</dd>
+		</dl>
+		<h2>Grid</h2>
+		<section class="grid">
+			<ul>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+				<li><img src="resources/images/img-grid.png" width="60" height="60" alt="image" /></li>
+			</ul>
+		</section>
+		<nav class="pagelevel home">
+			<a href="index.html">Home</a>
+		</nav>
+	</div>
+		<footer class="group">
+			<p>&copy; 2011 Forum Nokia</p>
+		</footer>
+	</div>
+	</body>
+</html>
